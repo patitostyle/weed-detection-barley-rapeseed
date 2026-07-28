@@ -2,8 +2,8 @@
 
 This repository contains the Python scripts used for training, evaluation, and few-shot fine-tuning of semantic segmentation models for weed detection in barley (*Hordeum vulgare*) and rapeseed (*Brassica napus*) using multispectral UAV imagery.
 
-> 📄 Companion manuscript: *[title]*, submitted to *Computers and Electronics in Agriculture* (under review).
-> 📦 Data: [Mendeley Data — DOI: 10.17632/mb4jvxk9dk.1](https://data.mendeley.com/datasets/mb4jvxk9dk/1)
+> 📄 Companion manuscript: *[TITLE — pendiente]*, in preparation for submission to *Computers and Electronics in Agriculture*.
+> 📦 Data: *Multispectral UAV imagery and semantic segmentation data for weed detection in barley and rapeseed*. Mendeley Data — DOI: [10.17632/mb4jvxk9dk.1](https://data.mendeley.com/datasets/mb4jvxk9dk/1)
 
 ---
 
@@ -96,23 +96,6 @@ python scripts/finetune_colza.py --n_patches 63 --mode full --data_dir <path>
 ```
 
 Reproduces: Figure 8.
-
-## Citation
-
-If you use this code or the associated dataset, please cite:
-
-```
-[Authors] ([Year]). From barley to rapeseed: few-shot fine-tuning of semantic
-segmentation for site-specific weed management. Computers and Electronics in
-Agriculture. [DOI once assigned]
-```
-
-Dataset citation:
-
-```
-[Authors] ([Year]). Weed Detection in Barley and Rapeseed using Multispectral
-UAV Imagery [Data set]. Mendeley Data. https://doi.org/10.17632/mb4jvxk9dk.1
-```
 
 ## License
 
