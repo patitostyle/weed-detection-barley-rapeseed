@@ -1,0 +1,38 @@
+=== TRAIN DIRS ===
+/home/y428/y428989/TFM_MALEZAS/data/patches/cebada_v1_rgb_nir_re_indices
+/home/y428/y428989/TFM_MALEZAS/data/patches/cebada_v2_rgb_nir_re_indices
+
+Test dir: /home/y428/y428989/TFM_MALEZAS/data/patches/cebada_v2_C2_rgb_nir_re_indices
+Canales de entrada: 8
+Best F1 maleza: 0.645540
+
+Epoch 1 | train_loss=0.668323 | test_loss=1.153839 | f1_cultivo=0.473928 | f1_maleza=0.352410 | f1_suelo=0.540574 | iou_cultivo=0.310554 | iou_maleza=0.213894 | iou_suelo=0.370401 | miou=0.298283
+Epoch 2 | train_loss=0.461600 | test_loss=1.791521 | f1_cultivo=0.302324 | f1_maleza=0.363657 | f1_suelo=0.470130 | iou_cultivo=0.178081 | iou_maleza=0.222237 | iou_suelo=0.307300 | miou=0.235873
+Epoch 3 | train_loss=0.409248 | test_loss=1.014965 | f1_cultivo=0.629412 | f1_maleza=0.424349 | f1_suelo=0.540943 | iou_cultivo=0.459227 | iou_maleza=0.269317 | iou_suelo=0.370749 | miou=0.366431
+Epoch 4 | train_loss=0.317747 | test_loss=1.464216 | f1_cultivo=0.539977 | f1_maleza=0.266263 | f1_suelo=0.537310 | iou_cultivo=0.369841 | iou_maleza=0.153578 | iou_suelo=0.367344 | miou=0.296921
+Epoch 5 | train_loss=0.289433 | test_loss=0.884548 | f1_cultivo=0.693340 | f1_maleza=0.570846 | f1_suelo=0.618053 | iou_cultivo=0.530620 | iou_maleza=0.399429 | iou_suelo=0.447233 | miou=0.459094
+Epoch 6 | train_loss=0.268417 | test_loss=1.706082 | f1_cultivo=0.431555 | f1_maleza=0.417514 | f1_suelo=0.494006 | iou_cultivo=0.275148 | iou_maleza=0.263835 | iou_suelo=0.328027 | miou=0.289003
+Epoch 7 | train_loss=0.272103 | test_loss=1.161232 | f1_cultivo=0.717683 | f1_maleza=0.380775 | f1_suelo=0.581573 | iou_cultivo=0.559677 | iou_maleza=0.235159 | iou_suelo=0.410013 | miou=0.401616
+Epoch 8 | train_loss=0.235195 | test_loss=1.196796 | f1_cultivo=0.571835 | f1_maleza=0.361098 | f1_suelo=0.572734 | iou_cultivo=0.400398 | iou_maleza=0.220329 | iou_suelo=0.401280 | miou=0.340669
+Epoch 9 | train_loss=0.251385 | test_loss=1.404940 | f1_cultivo=0.470938 | f1_maleza=0.645540 | f1_suelo=0.472469 | iou_cultivo=0.307991 | iou_maleza=0.476603 | iou_suelo=0.309302 | miou=0.364632
+Epoch 10 | train_loss=0.199140 | test_loss=1.242690 | f1_cultivo=0.514197 | f1_maleza=0.456465 | f1_suelo=0.582310 | iou_cultivo=0.346073 | iou_maleza=0.295727 | iou_suelo=0.410746 | miou=0.350849
+Epoch 11 | train_loss=0.236128 | test_loss=1.592090 | f1_cultivo=0.316489 | f1_maleza=0.538572 | f1_suelo=0.491957 | iou_cultivo=0.187993 | iou_maleza=0.368524 | iou_suelo=0.326222 | miou=0.294247
+Epoch 12 | train_loss=0.202869 | test_loss=1.171290 | f1_cultivo=0.641561 | f1_maleza=0.418203 | f1_suelo=0.642609 | iou_cultivo=0.472278 | iou_maleza=0.264385 | iou_suelo=0.473415 | miou=0.403359
+Epoch 13 | train_loss=0.197801 | test_loss=1.275999 | f1_cultivo=0.525036 | f1_maleza=0.471263 | f1_suelo=0.608701 | iou_cultivo=0.355965 | iou_maleza=0.308269 | iou_suelo=0.437505 | miou=0.367246
+Epoch 14 | train_loss=0.156313 | test_loss=1.302386 | f1_cultivo=0.539312 | f1_maleza=0.468060 | f1_suelo=0.616811 | iou_cultivo=0.369218 | iou_maleza=0.305534 | iou_suelo=0.445934 | miou=0.373562
+Epoch 15 | train_loss=0.134584 | test_loss=1.436790 | f1_cultivo=0.515853 | f1_maleza=0.423422 | f1_suelo=0.469269 | iou_cultivo=0.347575 | iou_maleza=0.268571 | iou_suelo=0.306565 | miou=0.307570
+Epoch 16 | train_loss=0.132213 | test_loss=1.693187 | f1_cultivo=0.417613 | f1_maleza=0.480040 | f1_suelo=0.525507 | iou_cultivo=0.263914 | iou_maleza=0.315824 | iou_suelo=0.356398 | miou=0.312045
+Epoch 17 | train_loss=0.126455 | test_loss=1.548645 | f1_cultivo=0.479216 | f1_maleza=0.456555 | f1_suelo=0.600449 | iou_cultivo=0.315111 | iou_maleza=0.295803 | iou_suelo=0.429030 | miou=0.346648
+Epoch 18 | train_loss=0.111546 | test_loss=2.194687 | f1_cultivo=0.375755 | f1_maleza=0.340894 | f1_suelo=0.600562 | iou_cultivo=0.231341 | iou_maleza=0.205469 | iou_suelo=0.429145 | miou=0.288652
+Epoch 19 | train_loss=0.116086 | test_loss=1.965234 | f1_cultivo=0.455881 | f1_maleza=0.480090 | f1_suelo=0.583378 | iou_cultivo=0.295237 | iou_maleza=0.315867 | iou_suelo=0.411810 | miou=0.340971
+Epoch 20 | train_loss=0.138752 | test_loss=1.313182 | f1_cultivo=0.657708 | f1_maleza=0.423432 | f1_suelo=0.618040 | iou_cultivo=0.489989 | iou_maleza=0.268578 | iou_suelo=0.447220 | miou=0.401929
+Epoch 21 | train_loss=0.087182 | test_loss=1.305045 | f1_cultivo=0.561128 | f1_maleza=0.436329 | f1_suelo=0.592785 | iou_cultivo=0.389978 | iou_maleza=0.279042 | iou_suelo=0.421247 | miou=0.363422
+Epoch 22 | train_loss=0.069448 | test_loss=1.566796 | f1_cultivo=0.470783 | f1_maleza=0.399989 | f1_suelo=0.596231 | iou_cultivo=0.307859 | iou_maleza=0.249992 | iou_suelo=0.424736 | miou=0.327529
+Epoch 23 | train_loss=0.071673 | test_loss=1.478050 | f1_cultivo=0.539755 | f1_maleza=0.398965 | f1_suelo=0.561882 | iou_cultivo=0.369633 | iou_maleza=0.249192 | iou_suelo=0.390706 | miou=0.336510
+Epoch 24 | train_loss=0.067605 | test_loss=1.613903 | f1_cultivo=0.492943 | f1_maleza=0.387184 | f1_suelo=0.597931 | iou_cultivo=0.327089 | iou_maleza=0.240067 | iou_suelo=0.426463 | miou=0.331207
+Epoch 25 | train_loss=0.098184 | test_loss=1.147937 | f1_cultivo=0.709644 | f1_maleza=0.495128 | f1_suelo=0.570226 | iou_cultivo=0.549960 | iou_maleza=0.329017 | iou_suelo=0.398822 | miou=0.425933
+Epoch 26 | train_loss=0.073851 | test_loss=1.729168 | f1_cultivo=0.393029 | f1_maleza=0.419719 | f1_suelo=0.594566 | iou_cultivo=0.244577 | iou_maleza=0.265598 | iou_suelo=0.423048 | miou=0.311075
+Epoch 27 | train_loss=0.108964 | test_loss=1.785045 | f1_cultivo=0.339346 | f1_maleza=0.463470 | f1_suelo=0.492312 | iou_cultivo=0.204345 | iou_maleza=0.301634 | iou_suelo=0.326534 | miou=0.277504
+Epoch 28 | train_loss=0.069420 | test_loss=1.287206 | f1_cultivo=0.726361 | f1_maleza=0.388917 | f1_suelo=0.623171 | iou_cultivo=0.570303 | iou_maleza=0.241401 | iou_suelo=0.452613 | miou=0.421439
+Epoch 29 | train_loss=0.039845 | test_loss=2.106320 | f1_cultivo=0.261101 | f1_maleza=0.437738 | f1_suelo=0.554211 | iou_cultivo=0.150153 | iou_maleza=0.280195 | iou_suelo=0.383328 | miou=0.271225
+Epoch 30 | train_loss=0.040291 | test_loss=1.778820 | f1_cultivo=0.467942 | f1_maleza=0.321899 | f1_suelo=0.603983 | iou_cultivo=0.305434 | iou_maleza=0.191824 | iou_suelo=0.432647 | miou=0.309968

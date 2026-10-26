@@ -1,0 +1,65 @@
+[
+  {
+    "seed": 42,
+    "patches": 21,
+    "unique_crop_pixels": 159060,
+    "unique_weed_pixels": 10249,
+    "unique_soil_pixels": 29545
+  },
+  {
+    "seed": 42,
+    "patches": 42,
+    "unique_crop_pixels": 324427,
+    "unique_weed_pixels": 12621,
+    "unique_soil_pixels": 53289
+  },
+  {
+    "seed": 42,
+    "patches": 63,
+    "unique_crop_pixels": 566378,
+    "unique_weed_pixels": 25397,
+    "unique_soil_pixels": 72974
+  },
+  {
+    "seed": 43,
+    "patches": 21,
+    "unique_crop_pixels": 311939,
+    "unique_weed_pixels": 10677,
+    "unique_soil_pixels": 78993
+  },
+  {
+    "seed": 43,
+    "patches": 42,
+    "unique_crop_pixels": 664246,
+    "unique_weed_pixels": 17996,
+    "unique_soil_pixels": 81181
+  },
+  {
+    "seed": 43,
+    "patches": 63,
+    "unique_crop_pixels": 817051,
+    "unique_weed_pixels": 21301,
+    "unique_soil_pixels": 87849
+  },
+  {
+    "seed": 44,
+    "patches": 21,
+    "unique_crop_pixels": 372524,
+    "unique_weed_pixels": 10541,
+    "unique_soil_pixels": 86647
+  },
+  {
+    "seed": 44,
+    "patches": 42,
+    "unique_crop_pixels": 691800,
+    "unique_weed_pixels": 14054,
+    "unique_soil_pixels": 86780
+  },
+  {
+    "seed": 44,
+    "patches": 63,
+    "unique_crop_pixels": 830114,
+    "unique_weed_pixels": 22021,
+    "unique_soil_pixels": 95899
+  }
+]

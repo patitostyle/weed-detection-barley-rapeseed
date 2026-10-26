@@ -1,0 +1,32 @@
+{
+  "strategy": "transfer_full",
+  "seed": 43,
+  "budget": 21,
+  "selected_epoch": 1,
+  "validation_f1": 0.932896803215417,
+  "epochs_run": 8,
+  "seconds": 7.5488293170928955,
+  "train_ids": [
+    "patch_00185.tif",
+    "patch_00241.tif",
+    "patch_00243.tif",
+    "patch_00374.tif",
+    "patch_00169.tif",
+    "patch_00108.tif",
+    "patch_00222.tif",
+    "patch_00156.tif",
+    "patch_00351.tif",
+    "patch_00166.tif",
+    "patch_00150.tif",
+    "patch_00385.tif",
+    "patch_00190.tif",
+    "patch_00101.tif",
+    "patch_00395.tif",
+    "patch_00415.tif",
+    "patch_00379.tif",
+    "patch_00333.tif",
+    "patch_00209.tif",
+    "patch_00141.tif",
+    "patch_00084.tif"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "analysis_date": "2026-10-19",
+  "python": "3.11.15",
+  "torch": "2.13.0+cu126",
+  "numpy": "2.4.6",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "source_checkpoint_sha256": "728e1ffe2e6647a251aca57f8cc7fdc416db3ad14a384d52efae294b86e9e1e4",
+  "checks": [
+    "423 unique partition IDs",
+    "zero cross-role shared footprints",
+    "nested budgets",
+    "validation-only selected epochs",
+    "19 consistent test confusion matrices",
+    "unique-pixel aggregation checked with constant-class model"
+  ]
+}

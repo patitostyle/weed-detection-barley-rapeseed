@@ -1,0 +1,32 @@
+{
+  "strategy": "scratch",
+  "seed": 42,
+  "budget": 21,
+  "selected_epoch": 12,
+  "validation_f1": 0.44060552092609084,
+  "epochs_run": 19,
+  "seconds": 77.0250551700592,
+  "train_ids": [
+    "patch_00410.tif",
+    "patch_00416.tif",
+    "patch_00145.tif",
+    "patch_00388.tif",
+    "patch_00046.tif",
+    "patch_00380.tif",
+    "patch_00404.tif",
+    "patch_00349.tif",
+    "patch_00050.tif",
+    "patch_00391.tif",
+    "patch_00366.tif",
+    "patch_00092.tif",
+    "patch_00422.tif",
+    "patch_00377.tif",
+    "patch_00249.tif",
+    "patch_00319.tif",
+    "patch_00381.tif",
+    "patch_00419.tif",
+    "patch_00350.tif",
+    "patch_00406.tif",
+    "patch_00357.tif"
+  ]
+}

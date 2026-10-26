@@ -1,0 +1,1548 @@
+[
+  {
+    "strategy": "direct_transfer",
+    "test": {
+      "f1": [
+        0.82679778068474,
+        0.0,
+        0.9990859968412611
+      ],
+      "iou": [
+        0.7047359500967368,
+        0.0,
+        0.9981736629603454
+      ],
+      "miou": 0.5676365376856941,
+      "confusion": [
+        [
+          229116,
+          84108,
+          0
+        ],
+        [
+          11885,
+          0,
+          0
+        ],
+        [
+          0,
+          261,
+          142648
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 42,
+    "budget": 21,
+    "selected_epoch": 2,
+    "validation_f1": 0.9547363238828879,
+    "epochs_run": 9,
+    "seconds": 44.336410999298096,
+    "train_ids": [
+      "patch_00410.tif",
+      "patch_00416.tif",
+      "patch_00145.tif",
+      "patch_00388.tif",
+      "patch_00046.tif",
+      "patch_00380.tif",
+      "patch_00404.tif",
+      "patch_00349.tif",
+      "patch_00050.tif",
+      "patch_00391.tif",
+      "patch_00366.tif",
+      "patch_00092.tif",
+      "patch_00422.tif",
+      "patch_00377.tif",
+      "patch_00249.tif",
+      "patch_00319.tif",
+      "patch_00381.tif",
+      "patch_00419.tif",
+      "patch_00350.tif",
+      "patch_00406.tif",
+      "patch_00357.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9813811913217709,
+        0.0,
+        0.9924953029549964
+      ],
+      "iou": [
+        0.9634430298761338,
+        0.0,
+        0.9851024078259591
+      ],
+      "miou": 0.6495151459006977,
+      "confusion": [
+        [
+          313224,
+          0,
+          0
+        ],
+        [
+          11885,
+          0,
+          0
+        ],
+        [
+          0,
+          2129,
+          140780
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 42,
+    "budget": 21,
+    "selected_epoch": 12,
+    "validation_f1": 0.44060552092609084,
+    "epochs_run": 19,
+    "seconds": 77.0250551700592,
+    "train_ids": [
+      "patch_00410.tif",
+      "patch_00416.tif",
+      "patch_00145.tif",
+      "patch_00388.tif",
+      "patch_00046.tif",
+      "patch_00380.tif",
+      "patch_00404.tif",
+      "patch_00349.tif",
+      "patch_00050.tif",
+      "patch_00391.tif",
+      "patch_00366.tif",
+      "patch_00092.tif",
+      "patch_00422.tif",
+      "patch_00377.tif",
+      "patch_00249.tif",
+      "patch_00319.tif",
+      "patch_00381.tif",
+      "patch_00419.tif",
+      "patch_00350.tif",
+      "patch_00406.tif",
+      "patch_00357.tif"
+    ],
+    "test": {
+      "f1": [
+        0.98877809463658,
+        0.5968830206652026,
+        0.9447051667250373
+      ],
+      "iou": [
+        0.977805256583347,
+        0.42539790299464436,
+        0.8952049578346504
+      ],
+      "miou": 0.7661360391375472,
+      "confusion": [
+        [
+          309976,
+          3126,
+          122
+        ],
+        [
+          510,
+          11279,
+          96
+        ],
+        [
+          3278,
+          11503,
+          128128
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 42,
+    "budget": 42,
+    "selected_epoch": 16,
+    "validation_f1": 0.9056569453707634,
+    "epochs_run": 23,
+    "seconds": 55.95616006851196,
+    "train_ids": [
+      "patch_00410.tif",
+      "patch_00416.tif",
+      "patch_00145.tif",
+      "patch_00388.tif",
+      "patch_00046.tif",
+      "patch_00380.tif",
+      "patch_00404.tif",
+      "patch_00349.tif",
+      "patch_00050.tif",
+      "patch_00391.tif",
+      "patch_00366.tif",
+      "patch_00092.tif",
+      "patch_00422.tif",
+      "patch_00377.tif",
+      "patch_00249.tif",
+      "patch_00319.tif",
+      "patch_00381.tif",
+      "patch_00419.tif",
+      "patch_00350.tif",
+      "patch_00406.tif",
+      "patch_00357.tif",
+      "patch_00163.tif",
+      "patch_00397.tif",
+      "patch_00114.tif",
+      "patch_00107.tif",
+      "patch_00070.tif",
+      "patch_00164.tif",
+      "patch_00106.tif",
+      "patch_00373.tif",
+      "patch_00120.tif",
+      "patch_00192.tif",
+      "patch_00044.tif",
+      "patch_00178.tif",
+      "patch_00244.tif",
+      "patch_00396.tif",
+      "patch_00420.tif",
+      "patch_00400.tif",
+      "patch_00399.tif",
+      "patch_00162.tif",
+      "patch_00393.tif",
+      "patch_00045.tif",
+      "patch_00119.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9789657495806438,
+        0.3369591107582374,
+        0.9456328938877109
+      ],
+      "iou": [
+        0.9587981492085754,
+        0.20261625131289984,
+        0.8968725298861911
+      ],
+      "miou": 0.6860956434692221,
+      "confusion": [
+        [
+          313108,
+          66,
+          50
+        ],
+        [
+          7641,
+          4244,
+          0
+        ],
+        [
+          5698,
+          8995,
+          128216
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 42,
+    "budget": 42,
+    "selected_epoch": 10,
+    "validation_f1": 0.7300411282559869,
+    "epochs_run": 17,
+    "seconds": 20.99300742149353,
+    "train_ids": [
+      "patch_00410.tif",
+      "patch_00416.tif",
+      "patch_00145.tif",
+      "patch_00388.tif",
+      "patch_00046.tif",
+      "patch_00380.tif",
+      "patch_00404.tif",
+      "patch_00349.tif",
+      "patch_00050.tif",
+      "patch_00391.tif",
+      "patch_00366.tif",
+      "patch_00092.tif",
+      "patch_00422.tif",
+      "patch_00377.tif",
+      "patch_00249.tif",
+      "patch_00319.tif",
+      "patch_00381.tif",
+      "patch_00419.tif",
+      "patch_00350.tif",
+      "patch_00406.tif",
+      "patch_00357.tif",
+      "patch_00163.tif",
+      "patch_00397.tif",
+      "patch_00114.tif",
+      "patch_00107.tif",
+      "patch_00070.tif",
+      "patch_00164.tif",
+      "patch_00106.tif",
+      "patch_00373.tif",
+      "patch_00120.tif",
+      "patch_00192.tif",
+      "patch_00044.tif",
+      "patch_00178.tif",
+      "patch_00244.tif",
+      "patch_00396.tif",
+      "patch_00420.tif",
+      "patch_00400.tif",
+      "patch_00399.tif",
+      "patch_00162.tif",
+      "patch_00393.tif",
+      "patch_00045.tif",
+      "patch_00119.tif"
+    ],
+    "test": {
+      "f1": [
+        0.8640598138019387,
+        0.10285744834406993,
+        0.6015955314774828
+      ],
+      "iou": [
+        0.760656084097092,
+        0.05421703722489926,
+        0.43020137951439613
+      ],
+      "miou": 0.4150248336121291,
+      "confusion": [
+        [
+          287992,
+          14005,
+          11227
+        ],
+        [
+          1866,
+          1924,
+          8095
+        ],
+        [
+          63520,
+          9597,
+          69792
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 42,
+    "budget": 63,
+    "selected_epoch": 8,
+    "validation_f1": 0.8480883385459884,
+    "epochs_run": 15,
+    "seconds": 25.159937858581543,
+    "train_ids": [
+      "patch_00410.tif",
+      "patch_00416.tif",
+      "patch_00145.tif",
+      "patch_00388.tif",
+      "patch_00046.tif",
+      "patch_00380.tif",
+      "patch_00404.tif",
+      "patch_00349.tif",
+      "patch_00050.tif",
+      "patch_00391.tif",
+      "patch_00366.tif",
+      "patch_00092.tif",
+      "patch_00422.tif",
+      "patch_00377.tif",
+      "patch_00249.tif",
+      "patch_00319.tif",
+      "patch_00381.tif",
+      "patch_00419.tif",
+      "patch_00350.tif",
+      "patch_00406.tif",
+      "patch_00357.tif",
+      "patch_00163.tif",
+      "patch_00397.tif",
+      "patch_00114.tif",
+      "patch_00107.tif",
+      "patch_00070.tif",
+      "patch_00164.tif",
+      "patch_00106.tif",
+      "patch_00373.tif",
+      "patch_00120.tif",
+      "patch_00192.tif",
+      "patch_00044.tif",
+      "patch_00178.tif",
+      "patch_00244.tif",
+      "patch_00396.tif",
+      "patch_00420.tif",
+      "patch_00400.tif",
+      "patch_00399.tif",
+      "patch_00162.tif",
+      "patch_00393.tif",
+      "patch_00045.tif",
+      "patch_00119.tif",
+      "patch_00412.tif",
+      "patch_00345.tif",
+      "patch_00102.tif",
+      "patch_00126.tif",
+      "patch_00180.tif",
+      "patch_00351.tif",
+      "patch_00204.tif",
+      "patch_00083.tif",
+      "patch_00130.tif",
+      "patch_00374.tif",
+      "patch_00086.tif",
+      "patch_00181.tif",
+      "patch_00415.tif",
+      "patch_00250.tif",
+      "patch_00089.tif",
+      "patch_00153.tif",
+      "patch_00136.tif",
+      "patch_00068.tif",
+      "patch_00317.tif",
+      "patch_00147.tif",
+      "patch_00358.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9881685554910523,
+        0.48158488545531036,
+        0.9638204974908057
+      ],
+      "iou": [
+        0.9766138034686407,
+        0.3171628633318221,
+        0.9301675000874218
+      ],
+      "miou": 0.7413147222959614,
+      "confusion": [
+        [
+          313202,
+          20,
+          2
+        ],
+        [
+          5515,
+          6296,
+          74
+        ],
+        [
+          1963,
+          7946,
+          133000
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 42,
+    "budget": 63,
+    "selected_epoch": 7,
+    "validation_f1": 0.24740303059182311,
+    "epochs_run": 14,
+    "seconds": 24.88732600212097,
+    "train_ids": [
+      "patch_00410.tif",
+      "patch_00416.tif",
+      "patch_00145.tif",
+      "patch_00388.tif",
+      "patch_00046.tif",
+      "patch_00380.tif",
+      "patch_00404.tif",
+      "patch_00349.tif",
+      "patch_00050.tif",
+      "patch_00391.tif",
+      "patch_00366.tif",
+      "patch_00092.tif",
+      "patch_00422.tif",
+      "patch_00377.tif",
+      "patch_00249.tif",
+      "patch_00319.tif",
+      "patch_00381.tif",
+      "patch_00419.tif",
+      "patch_00350.tif",
+      "patch_00406.tif",
+      "patch_00357.tif",
+      "patch_00163.tif",
+      "patch_00397.tif",
+      "patch_00114.tif",
+      "patch_00107.tif",
+      "patch_00070.tif",
+      "patch_00164.tif",
+      "patch_00106.tif",
+      "patch_00373.tif",
+      "patch_00120.tif",
+      "patch_00192.tif",
+      "patch_00044.tif",
+      "patch_00178.tif",
+      "patch_00244.tif",
+      "patch_00396.tif",
+      "patch_00420.tif",
+      "patch_00400.tif",
+      "patch_00399.tif",
+      "patch_00162.tif",
+      "patch_00393.tif",
+      "patch_00045.tif",
+      "patch_00119.tif",
+      "patch_00412.tif",
+      "patch_00345.tif",
+      "patch_00102.tif",
+      "patch_00126.tif",
+      "patch_00180.tif",
+      "patch_00351.tif",
+      "patch_00204.tif",
+      "patch_00083.tif",
+      "patch_00130.tif",
+      "patch_00374.tif",
+      "patch_00086.tif",
+      "patch_00181.tif",
+      "patch_00415.tif",
+      "patch_00250.tif",
+      "patch_00089.tif",
+      "patch_00153.tif",
+      "patch_00136.tif",
+      "patch_00068.tif",
+      "patch_00317.tif",
+      "patch_00147.tif",
+      "patch_00358.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9601653392738722,
+        0.00243630088315907,
+        0.8876115852046661
+      ],
+      "iou": [
+        0.9233827025956014,
+        0.001219636141884338,
+        0.7979331440340252
+      ],
+      "miou": 0.5741784942571703,
+      "confusion": [
+        [
+          298260,
+          4232,
+          10732
+        ],
+        [
+          1388,
+          24,
+          10473
+        ],
+        [
+          8396,
+          3561,
+          130952
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 43,
+    "budget": 21,
+    "selected_epoch": 1,
+    "validation_f1": 0.932896803215417,
+    "epochs_run": 8,
+    "seconds": 7.5488293170928955,
+    "train_ids": [
+      "patch_00185.tif",
+      "patch_00241.tif",
+      "patch_00243.tif",
+      "patch_00374.tif",
+      "patch_00169.tif",
+      "patch_00108.tif",
+      "patch_00222.tif",
+      "patch_00156.tif",
+      "patch_00351.tif",
+      "patch_00166.tif",
+      "patch_00150.tif",
+      "patch_00385.tif",
+      "patch_00190.tif",
+      "patch_00101.tif",
+      "patch_00395.tif",
+      "patch_00415.tif",
+      "patch_00379.tif",
+      "patch_00333.tif",
+      "patch_00209.tif",
+      "patch_00141.tif",
+      "patch_00084.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9727993680884676,
+        0.0,
+        0.9407562093700162
+      ],
+      "iou": [
+        0.9470393006653153,
+        0.0,
+        0.8881394610871429
+      ],
+      "miou": 0.611726253917486,
+      "confusion": [
+        [
+          307891,
+          129,
+          5204
+        ],
+        [
+          11885,
+          0,
+          0
+        ],
+        [
+          0,
+          11364,
+          131545
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 43,
+    "budget": 21,
+    "selected_epoch": 18,
+    "validation_f1": 0.03478563858360313,
+    "epochs_run": 25,
+    "seconds": 24.50092101097107,
+    "train_ids": [
+      "patch_00185.tif",
+      "patch_00241.tif",
+      "patch_00243.tif",
+      "patch_00374.tif",
+      "patch_00169.tif",
+      "patch_00108.tif",
+      "patch_00222.tif",
+      "patch_00156.tif",
+      "patch_00351.tif",
+      "patch_00166.tif",
+      "patch_00150.tif",
+      "patch_00385.tif",
+      "patch_00190.tif",
+      "patch_00101.tif",
+      "patch_00395.tif",
+      "patch_00415.tif",
+      "patch_00379.tif",
+      "patch_00333.tif",
+      "patch_00209.tif",
+      "patch_00141.tif",
+      "patch_00084.tif"
+    ],
+    "test": {
+      "f1": [
+        0.05486544616796806,
+        0.06640949349570993,
+        0.8827684333553534
+      ],
+      "iou": [
+        0.02820650430577146,
+        0.03434516939978707,
+        0.7901391794778495
+      ],
+      "miou": 0.28423028439446935,
+      "confusion": [
+        [
+          9145,
+          304079,
+          0
+        ],
+        [
+          368,
+          11517,
+          0
+        ],
+        [
+          10624,
+          19367,
+          112918
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 43,
+    "budget": 42,
+    "selected_epoch": 3,
+    "validation_f1": 0.35327937060292003,
+    "epochs_run": 10,
+    "seconds": 13.99319314956665,
+    "train_ids": [
+      "patch_00185.tif",
+      "patch_00241.tif",
+      "patch_00243.tif",
+      "patch_00374.tif",
+      "patch_00169.tif",
+      "patch_00108.tif",
+      "patch_00222.tif",
+      "patch_00156.tif",
+      "patch_00351.tif",
+      "patch_00166.tif",
+      "patch_00150.tif",
+      "patch_00385.tif",
+      "patch_00190.tif",
+      "patch_00101.tif",
+      "patch_00395.tif",
+      "patch_00415.tif",
+      "patch_00379.tif",
+      "patch_00333.tif",
+      "patch_00209.tif",
+      "patch_00141.tif",
+      "patch_00084.tif",
+      "patch_00213.tif",
+      "patch_00400.tif",
+      "patch_00221.tif",
+      "patch_00361.tif",
+      "patch_00246.tif",
+      "patch_00043.tif",
+      "patch_00419.tif",
+      "patch_00159.tif",
+      "patch_00252.tif",
+      "patch_00378.tif",
+      "patch_00047.tif",
+      "patch_00123.tif",
+      "patch_00092.tif",
+      "patch_00359.tif",
+      "patch_00208.tif",
+      "patch_00392.tif",
+      "patch_00079.tif",
+      "patch_00165.tif",
+      "patch_00229.tif",
+      "patch_00121.tif",
+      "patch_00112.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9280771918347929,
+        0.0,
+        0.8103192033951484
+      ],
+      "iou": [
+        0.8658059934589576,
+        0.0,
+        0.6811232102826764
+      ],
+      "miou": 0.515643067913878,
+      "confusion": [
+        [
+          312117,
+          92,
+          1015
+        ],
+        [
+          11722,
+          0,
+          163
+        ],
+        [
+          35547,
+          9221,
+          98141
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 43,
+    "budget": 42,
+    "selected_epoch": 2,
+    "validation_f1": 0.21492802621030985,
+    "epochs_run": 9,
+    "seconds": 12.185885429382324,
+    "train_ids": [
+      "patch_00185.tif",
+      "patch_00241.tif",
+      "patch_00243.tif",
+      "patch_00374.tif",
+      "patch_00169.tif",
+      "patch_00108.tif",
+      "patch_00222.tif",
+      "patch_00156.tif",
+      "patch_00351.tif",
+      "patch_00166.tif",
+      "patch_00150.tif",
+      "patch_00385.tif",
+      "patch_00190.tif",
+      "patch_00101.tif",
+      "patch_00395.tif",
+      "patch_00415.tif",
+      "patch_00379.tif",
+      "patch_00333.tif",
+      "patch_00209.tif",
+      "patch_00141.tif",
+      "patch_00084.tif",
+      "patch_00213.tif",
+      "patch_00400.tif",
+      "patch_00221.tif",
+      "patch_00361.tif",
+      "patch_00246.tif",
+      "patch_00043.tif",
+      "patch_00419.tif",
+      "patch_00159.tif",
+      "patch_00252.tif",
+      "patch_00378.tif",
+      "patch_00047.tif",
+      "patch_00123.tif",
+      "patch_00092.tif",
+      "patch_00359.tif",
+      "patch_00208.tif",
+      "patch_00392.tif",
+      "patch_00079.tif",
+      "patch_00165.tif",
+      "patch_00229.tif",
+      "patch_00121.tif",
+      "patch_00112.tif"
+    ],
+    "test": {
+      "f1": [
+        0.06443160585038982,
+        0.06884711767882114,
+        0.5029764174203026
+      ],
+      "iou": [
+        0.033288209316260184,
+        0.035650785760715786,
+        0.33598429795846296
+      ],
+      "miou": 0.13497443101181297,
+      "confusion": [
+        [
+          10500,
+          155517,
+          147207
+        ],
+        [
+          58,
+          7459,
+          4368
+        ],
+        [
+          2145,
+          41822,
+          98942
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 43,
+    "budget": 63,
+    "selected_epoch": 3,
+    "validation_f1": 0.5279171254945144,
+    "epochs_run": 10,
+    "seconds": 17.67372965812683,
+    "train_ids": [
+      "patch_00185.tif",
+      "patch_00241.tif",
+      "patch_00243.tif",
+      "patch_00374.tif",
+      "patch_00169.tif",
+      "patch_00108.tif",
+      "patch_00222.tif",
+      "patch_00156.tif",
+      "patch_00351.tif",
+      "patch_00166.tif",
+      "patch_00150.tif",
+      "patch_00385.tif",
+      "patch_00190.tif",
+      "patch_00101.tif",
+      "patch_00395.tif",
+      "patch_00415.tif",
+      "patch_00379.tif",
+      "patch_00333.tif",
+      "patch_00209.tif",
+      "patch_00141.tif",
+      "patch_00084.tif",
+      "patch_00213.tif",
+      "patch_00400.tif",
+      "patch_00221.tif",
+      "patch_00361.tif",
+      "patch_00246.tif",
+      "patch_00043.tif",
+      "patch_00419.tif",
+      "patch_00159.tif",
+      "patch_00252.tif",
+      "patch_00378.tif",
+      "patch_00047.tif",
+      "patch_00123.tif",
+      "patch_00092.tif",
+      "patch_00359.tif",
+      "patch_00208.tif",
+      "patch_00392.tif",
+      "patch_00079.tif",
+      "patch_00165.tif",
+      "patch_00229.tif",
+      "patch_00121.tif",
+      "patch_00112.tif",
+      "patch_00076.tif",
+      "patch_00096.tif",
+      "patch_00180.tif",
+      "patch_00407.tif",
+      "patch_00245.tif",
+      "patch_00233.tif",
+      "patch_00244.tif",
+      "patch_00077.tif",
+      "patch_00317.tif",
+      "patch_00171.tif",
+      "patch_00118.tif",
+      "patch_00103.tif",
+      "patch_00184.tif",
+      "patch_00389.tif",
+      "patch_00334.tif",
+      "patch_00393.tif",
+      "patch_00347.tif",
+      "patch_00104.tif",
+      "patch_00239.tif",
+      "patch_00411.tif",
+      "patch_00420.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9076850162257429,
+        0.021587998536406878,
+        0.721814659207175
+      ],
+      "iou": [
+        0.830973693219363,
+        0.010911781024597743,
+        0.5647183050616527
+      ],
+      "miou": 0.4688679264352045,
+      "confusion": [
+        [
+          313130,
+          0,
+          94
+        ],
+        [
+          7921,
+          177,
+          3787
+        ],
+        [
+          55678,
+          4336,
+          82895
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 43,
+    "budget": 63,
+    "selected_epoch": 3,
+    "validation_f1": 0.2842724617763271,
+    "epochs_run": 10,
+    "seconds": 17.814855813980103,
+    "train_ids": [
+      "patch_00185.tif",
+      "patch_00241.tif",
+      "patch_00243.tif",
+      "patch_00374.tif",
+      "patch_00169.tif",
+      "patch_00108.tif",
+      "patch_00222.tif",
+      "patch_00156.tif",
+      "patch_00351.tif",
+      "patch_00166.tif",
+      "patch_00150.tif",
+      "patch_00385.tif",
+      "patch_00190.tif",
+      "patch_00101.tif",
+      "patch_00395.tif",
+      "patch_00415.tif",
+      "patch_00379.tif",
+      "patch_00333.tif",
+      "patch_00209.tif",
+      "patch_00141.tif",
+      "patch_00084.tif",
+      "patch_00213.tif",
+      "patch_00400.tif",
+      "patch_00221.tif",
+      "patch_00361.tif",
+      "patch_00246.tif",
+      "patch_00043.tif",
+      "patch_00419.tif",
+      "patch_00159.tif",
+      "patch_00252.tif",
+      "patch_00378.tif",
+      "patch_00047.tif",
+      "patch_00123.tif",
+      "patch_00092.tif",
+      "patch_00359.tif",
+      "patch_00208.tif",
+      "patch_00392.tif",
+      "patch_00079.tif",
+      "patch_00165.tif",
+      "patch_00229.tif",
+      "patch_00121.tif",
+      "patch_00112.tif",
+      "patch_00076.tif",
+      "patch_00096.tif",
+      "patch_00180.tif",
+      "patch_00407.tif",
+      "patch_00245.tif",
+      "patch_00233.tif",
+      "patch_00244.tif",
+      "patch_00077.tif",
+      "patch_00317.tif",
+      "patch_00171.tif",
+      "patch_00118.tif",
+      "patch_00103.tif",
+      "patch_00184.tif",
+      "patch_00389.tif",
+      "patch_00334.tif",
+      "patch_00393.tif",
+      "patch_00347.tif",
+      "patch_00104.tif",
+      "patch_00239.tif",
+      "patch_00411.tif",
+      "patch_00420.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9294083996138557,
+        0.07289179758585572,
+        0.86691076392217
+      ],
+      "iou": [
+        0.8681259962049336,
+        0.037824444675468694,
+        0.765086046464414
+      ],
+      "miou": 0.5570121624482721,
+      "confusion": [
+        [
+          285939,
+          23225,
+          4060
+        ],
+        [
+          8902,
+          2183,
+          800
+        ],
+        [
+          7249,
+          22604,
+          113056
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 44,
+    "budget": 21,
+    "selected_epoch": 1,
+    "validation_f1": 0.9068616366422955,
+    "epochs_run": 8,
+    "seconds": 7.331213474273682,
+    "train_ids": [
+      "patch_00071.tif",
+      "patch_00064.tif",
+      "patch_00150.tif",
+      "patch_00189.tif",
+      "patch_00378.tif",
+      "patch_00088.tif",
+      "patch_00067.tif",
+      "patch_00191.tif",
+      "patch_00394.tif",
+      "patch_00241.tif",
+      "patch_00084.tif",
+      "patch_00201.tif",
+      "patch_00095.tif",
+      "patch_00389.tif",
+      "patch_00142.tif",
+      "patch_00138.tif",
+      "patch_00123.tif",
+      "patch_00062.tif",
+      "patch_00226.tif",
+      "patch_00251.tif",
+      "patch_00178.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9716231519146702,
+        0.0,
+        0.9451357586512866
+      ],
+      "iou": [
+        0.9448123552408577,
+        0.0,
+        0.8959785739280235
+      ],
+      "miou": 0.6135969763896271,
+      "confusion": [
+        [
+          307167,
+          362,
+          5695
+        ],
+        [
+          11885,
+          0,
+          0
+        ],
+        [
+          0,
+          9763,
+          133146
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 44,
+    "budget": 21,
+    "selected_epoch": 1,
+    "validation_f1": 0.07619866437397528,
+    "epochs_run": 8,
+    "seconds": 7.353656053543091,
+    "train_ids": [
+      "patch_00071.tif",
+      "patch_00064.tif",
+      "patch_00150.tif",
+      "patch_00189.tif",
+      "patch_00378.tif",
+      "patch_00088.tif",
+      "patch_00067.tif",
+      "patch_00191.tif",
+      "patch_00394.tif",
+      "patch_00241.tif",
+      "patch_00084.tif",
+      "patch_00201.tif",
+      "patch_00095.tif",
+      "patch_00389.tif",
+      "patch_00142.tif",
+      "patch_00138.tif",
+      "patch_00123.tif",
+      "patch_00062.tif",
+      "patch_00226.tif",
+      "patch_00251.tif",
+      "patch_00178.tif"
+    ],
+    "test": {
+      "f1": [
+        0.15884793339614947,
+        0.05334686200978544,
+        1.399462606359158e-05
+      ],
+      "iou": [
+        0.08627637894633926,
+        0.027404400387868996,
+        6.997361994528063e-06
+      ],
+      "miou": 0.037895925565400924,
+      "confusion": [
+        [
+          28238,
+          284984,
+          2
+        ],
+        [
+          213,
+          11672,
+          0
+        ],
+        [
+          13860,
+          129048,
+          1
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 44,
+    "budget": 42,
+    "selected_epoch": 1,
+    "validation_f1": 0.7613877743686571,
+    "epochs_run": 8,
+    "seconds": 10.943036556243896,
+    "train_ids": [
+      "patch_00071.tif",
+      "patch_00064.tif",
+      "patch_00150.tif",
+      "patch_00189.tif",
+      "patch_00378.tif",
+      "patch_00088.tif",
+      "patch_00067.tif",
+      "patch_00191.tif",
+      "patch_00394.tif",
+      "patch_00241.tif",
+      "patch_00084.tif",
+      "patch_00201.tif",
+      "patch_00095.tif",
+      "patch_00389.tif",
+      "patch_00142.tif",
+      "patch_00138.tif",
+      "patch_00123.tif",
+      "patch_00062.tif",
+      "patch_00226.tif",
+      "patch_00251.tif",
+      "patch_00178.tif",
+      "patch_00397.tif",
+      "patch_00063.tif",
+      "patch_00373.tif",
+      "patch_00169.tif",
+      "patch_00181.tif",
+      "patch_00243.tif",
+      "patch_00134.tif",
+      "patch_00372.tif",
+      "patch_00046.tif",
+      "patch_00126.tif",
+      "patch_00334.tif",
+      "patch_00096.tif",
+      "patch_00054.tif",
+      "patch_00246.tif",
+      "patch_00182.tif",
+      "patch_00148.tif",
+      "patch_00371.tif",
+      "patch_00078.tif",
+      "patch_00349.tif",
+      "patch_00205.tif",
+      "patch_00391.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9727620434865721,
+        0.0,
+        0.9636838507248155
+      ],
+      "iou": [
+        0.9469685551614997,
+        0.0,
+        0.929912991705119
+      ],
+      "miou": 0.6256271822888729,
+      "confusion": [
+        [
+          307868,
+          463,
+          4893
+        ],
+        [
+          11885,
+          0,
+          0
+        ],
+        [
+          0,
+          5466,
+          137443
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 44,
+    "budget": 42,
+    "selected_epoch": 8,
+    "validation_f1": 0.013733984699050603,
+    "epochs_run": 15,
+    "seconds": 20.754403591156006,
+    "train_ids": [
+      "patch_00071.tif",
+      "patch_00064.tif",
+      "patch_00150.tif",
+      "patch_00189.tif",
+      "patch_00378.tif",
+      "patch_00088.tif",
+      "patch_00067.tif",
+      "patch_00191.tif",
+      "patch_00394.tif",
+      "patch_00241.tif",
+      "patch_00084.tif",
+      "patch_00201.tif",
+      "patch_00095.tif",
+      "patch_00389.tif",
+      "patch_00142.tif",
+      "patch_00138.tif",
+      "patch_00123.tif",
+      "patch_00062.tif",
+      "patch_00226.tif",
+      "patch_00251.tif",
+      "patch_00178.tif",
+      "patch_00397.tif",
+      "patch_00063.tif",
+      "patch_00373.tif",
+      "patch_00169.tif",
+      "patch_00181.tif",
+      "patch_00243.tif",
+      "patch_00134.tif",
+      "patch_00372.tif",
+      "patch_00046.tif",
+      "patch_00126.tif",
+      "patch_00334.tif",
+      "patch_00096.tif",
+      "patch_00054.tif",
+      "patch_00246.tif",
+      "patch_00182.tif",
+      "patch_00148.tif",
+      "patch_00371.tif",
+      "patch_00078.tif",
+      "patch_00349.tif",
+      "patch_00205.tif",
+      "patch_00391.tif"
+    ],
+    "test": {
+      "f1": [
+        0.7889099952038732,
+        0.046243921802123646,
+        0.721206982251981
+      ],
+      "iou": [
+        0.6514049262066837,
+        0.023669240146281998,
+        0.5639747576367294
+      ],
+      "miou": 0.413016307996565,
+      "confusion": [
+        [
+          208901,
+          12752,
+          91571
+        ],
+        [
+          5118,
+          699,
+          6068
+        ],
+        [
+          2351,
+          4895,
+          135663
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "transfer_full",
+    "seed": 44,
+    "budget": 63,
+    "selected_epoch": 6,
+    "validation_f1": 0.14019382391590013,
+    "epochs_run": 13,
+    "seconds": 23.68228554725647,
+    "train_ids": [
+      "patch_00071.tif",
+      "patch_00064.tif",
+      "patch_00150.tif",
+      "patch_00189.tif",
+      "patch_00378.tif",
+      "patch_00088.tif",
+      "patch_00067.tif",
+      "patch_00191.tif",
+      "patch_00394.tif",
+      "patch_00241.tif",
+      "patch_00084.tif",
+      "patch_00201.tif",
+      "patch_00095.tif",
+      "patch_00389.tif",
+      "patch_00142.tif",
+      "patch_00138.tif",
+      "patch_00123.tif",
+      "patch_00062.tif",
+      "patch_00226.tif",
+      "patch_00251.tif",
+      "patch_00178.tif",
+      "patch_00397.tif",
+      "patch_00063.tif",
+      "patch_00373.tif",
+      "patch_00169.tif",
+      "patch_00181.tif",
+      "patch_00243.tif",
+      "patch_00134.tif",
+      "patch_00372.tif",
+      "patch_00046.tif",
+      "patch_00126.tif",
+      "patch_00334.tif",
+      "patch_00096.tif",
+      "patch_00054.tif",
+      "patch_00246.tif",
+      "patch_00182.tif",
+      "patch_00148.tif",
+      "patch_00371.tif",
+      "patch_00078.tif",
+      "patch_00349.tif",
+      "patch_00205.tif",
+      "patch_00391.tif",
+      "patch_00106.tif",
+      "patch_00101.tif",
+      "patch_00192.tif",
+      "patch_00227.tif",
+      "patch_00102.tif",
+      "patch_00094.tif",
+      "patch_00204.tif",
+      "patch_00158.tif",
+      "patch_00362.tif",
+      "patch_00419.tif",
+      "patch_00099.tif",
+      "patch_00066.tif",
+      "patch_00047.tif",
+      "patch_00048.tif",
+      "patch_00179.tif",
+      "patch_00382.tif",
+      "patch_00149.tif",
+      "patch_00407.tif",
+      "patch_00119.tif",
+      "patch_00381.tif",
+      "patch_00418.tif"
+    ],
+    "test": {
+      "f1": [
+        0.9504773483033575,
+        0.37416017766283416,
+        0.9510114345223694
+      ],
+      "iou": [
+        0.9056282365767239,
+        0.23013348087696245,
+        0.9065984757320498
+      ],
+      "miou": 0.6807867310619121,
+      "confusion": [
+        [
+          292402,
+          15113,
+          5709
+        ],
+        [
+          4268,
+          6655,
+          962
+        ],
+        [
+          5380,
+          1920,
+          135609
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  },
+  {
+    "strategy": "scratch",
+    "seed": 44,
+    "budget": 63,
+    "selected_epoch": 6,
+    "validation_f1": 0.00829422678162174,
+    "epochs_run": 13,
+    "seconds": 23.920761585235596,
+    "train_ids": [
+      "patch_00071.tif",
+      "patch_00064.tif",
+      "patch_00150.tif",
+      "patch_00189.tif",
+      "patch_00378.tif",
+      "patch_00088.tif",
+      "patch_00067.tif",
+      "patch_00191.tif",
+      "patch_00394.tif",
+      "patch_00241.tif",
+      "patch_00084.tif",
+      "patch_00201.tif",
+      "patch_00095.tif",
+      "patch_00389.tif",
+      "patch_00142.tif",
+      "patch_00138.tif",
+      "patch_00123.tif",
+      "patch_00062.tif",
+      "patch_00226.tif",
+      "patch_00251.tif",
+      "patch_00178.tif",
+      "patch_00397.tif",
+      "patch_00063.tif",
+      "patch_00373.tif",
+      "patch_00169.tif",
+      "patch_00181.tif",
+      "patch_00243.tif",
+      "patch_00134.tif",
+      "patch_00372.tif",
+      "patch_00046.tif",
+      "patch_00126.tif",
+      "patch_00334.tif",
+      "patch_00096.tif",
+      "patch_00054.tif",
+      "patch_00246.tif",
+      "patch_00182.tif",
+      "patch_00148.tif",
+      "patch_00371.tif",
+      "patch_00078.tif",
+      "patch_00349.tif",
+      "patch_00205.tif",
+      "patch_00391.tif",
+      "patch_00106.tif",
+      "patch_00101.tif",
+      "patch_00192.tif",
+      "patch_00227.tif",
+      "patch_00102.tif",
+      "patch_00094.tif",
+      "patch_00204.tif",
+      "patch_00158.tif",
+      "patch_00362.tif",
+      "patch_00419.tif",
+      "patch_00099.tif",
+      "patch_00066.tif",
+      "patch_00047.tif",
+      "patch_00048.tif",
+      "patch_00179.tif",
+      "patch_00382.tif",
+      "patch_00149.tif",
+      "patch_00407.tif",
+      "patch_00119.tif",
+      "patch_00381.tif",
+      "patch_00418.tif"
+    ],
+    "test": {
+      "f1": [
+        0.8651963379426691,
+        0.0015719974848040243,
+        0.775548424670831
+      ],
+      "iou": [
+        0.7624194095162861,
+        0.0007866170223923645,
+        0.6333843169439678
+      ],
+      "miou": 0.4655301144942154,
+      "confusion": [
+        [
+          245143,
+          3819,
+          64262
+        ],
+        [
+          4593,
+          15,
+          7277
+        ],
+        [
+          3716,
+          3365,
+          135828
+        ]
+      ],
+      "unique_labelled_pixels": 468018
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "budgets": [
+    21,
+    42,
+    63
+  ],
+  "epochs_max": 30,
+  "patience": 7,
+  "min_delta": 0.0001,
+  "lr_both_strategies": 0.0001,
+  "batch_size": 4,
+  "loss_weights": [
+    1,
+    3,
+    1.5
+  ],
+  "evaluation": "mean probability per unique labelled pixel",
+  "strategies": [
+    "transfer_full",
+    "scratch"
+  ],
+  "notes": "Historical barley checkpoint previously selected using Barley 2; target test used only after all runs. Training subsets conditioned on presence of all three labelled classes."
+}
