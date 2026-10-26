@@ -1,102 +1,89 @@
-# Weed Detection in Barley and Rapeseed using Multispectral UAV Imagery
+# Weed Segmentation in Barley and Rapeseed Using Multispectral UAV Imagery
 
-This repository contains the Python scripts used for training, evaluation, and few-shot fine-tuning of semantic segmentation models for weed detection in barley (*Hordeum vulgare*) and rapeseed (*Brassica napus*) using multispectral UAV imagery.
+Code and reproducibility files for the manuscript:
 
-> 📄 Companion manuscript: *From barley to rapeseed: few-shot fine-tuning of semantic segmentation models for weed detection using UAV multispectral imagery*, in preparation for submission to *Computers and Electronics in Agriculture*.
-> 📦 Data: *Multispectral UAV imagery and semantic segmentation data for weed detection in barley and rapeseed*. Mendeley Data — DOI: [10.17632/mb4jvxk9dk.1](https://data.mendeley.com/datasets/mb4jvxk9dk/1)
+**From barley to rapeseed: evaluating transfer learning for weed segmentation in UAV multispectral imagery with limited target annotations**
 
----
-
-## Overview
-
-The study evaluates:
-
-- Four spectral configurations (RGB, RGB+NIR+RedEdge, RGB+vegetation indices, and full multispectral)
-- Three modelling approaches (U-Net, DeepLabv3, and Random Forest)
-- Spatial generalisation to an independent barley field
-- Cross-crop transfer to rapeseed
-- Few-shot fine-tuning for domain adaptation with limited labelled data
+The study evaluates spectral inputs and segmentation models in barley, followed by transfer to rapeseed and adaptation with limited target annotations.
 
 ## Repository structure
 
-```
-weed-detection-barley-rapeseed/
-├── scripts/
-│   ├── generate_patches.py    # Patch generation (256×256, 50% overlap) from orthomosaics and masks
-│   ├── train_unet_spatial.py  # U-Net training: spectral configs + temporal/spatial validation
-│   ├── train_deeplabv3.py     # DeepLabv3 training (architecture comparison)
-│   ├── train_random_forest.py # Random Forest baseline (architecture comparison)
-│   ├── finetune_colza.py      # Few-shot fine-tuning on rapeseed
-│   └── requirements.txt
-├── LICENSE
-└── README.md
-```
+- `scripts/`: original source-domain training and exploratory rapeseed fine-tuning scripts.
+- `revision_controlada/`: additional spatially separated evaluation, paired adaptation subsets, training and evaluation code, archived histories, numerical results and figure-generation scripts.
 
-| Script | Reproduces | Manuscript section |
-|---|---|---|
-| `generate_patches.py` | Patch dataset construction | Section 2.3 |
-| `train_unet_spatial.py` | Spectral configuration comparison, temporal & spatial validation | Section 2.4/2.5, Table 1, Figures 3, 6, 7 |
-| `train_deeplabv3.py` | Architecture comparison | Section 2.5, Table 2, Figure 4 |
-| `train_random_forest.py` | Architecture comparison | Section 2.5, Table 2, Figure 4 |
-| `finetune_colza.py` | Few-shot domain adaptation to rapeseed | Section 2.7, Figure 8 |
+The original exploratory experiments and the controlled evaluation use different protocols. Their scores should not be interpreted as directly interchangeable.
 
-> **Note:** spectral indices (NDVI, NDRE, VARI) were computed in ArcGIS Pro using standard band math (formulas detailed in Section 2.2 of the manuscript), not via scripts in this repository. Evaluation metrics (F1-score, IoU, mIoU) are computed inline within each training script rather than in a separate module.
+## Dataset
 
-## Data availability
+The processed multispectral UAV patch dataset is available in Mendeley Data:
 
-The UAV image patches and reference masks used in this study are publicly available at Mendeley Data:
+**DOI:** https://doi.org/10.17632/mb4jvxk9dk.1
 
-**DOI: [10.17632/mb4jvxk9dk.1](https://data.mendeley.com/datasets/mb4jvxk9dk/1)**
+The data originate from barley and rapeseed fields in Valdeavero, Madrid, Spain. The full input configuration contains RGB, NIR, red edge, NDVI, NDRE and VARI.
 
-This repository does not include raw data. Scripts expect the patch files and patch-ID lists (train/test splits for the few-shot fine-tuning experiments, 21/42/63 patches) described in the linked dataset.
+Reference masks contain partial annotations for crop, weed and soil. Unlabelled pixels are excluded from training losses and evaluation metrics. Image patches overlap; patch counts do not represent independent annotated locations.
 
-## Requirements
+Refer to the dataset repository for its files and licence.
 
-- Python 3.10+
-- PyTorch 2.0+
-- torchvision
+## Controlled evaluation
 
-Install with:
+The revised experiment compares:
 
-```bash
-git clone https://github.com/patitostyle/weed-detection-barley-rapeseed
-cd weed-detection-barley-rapeseed
-pip install -r scripts/requirements.txt
-```
+- Full fine-tuning of a barley-trained U-Net.
+- Training the same architecture from random initialization.
+- Direct transfer without adaptation.
 
-## Usage
+The fixed rapeseed partition contains 269 adaptation-pool patches, 57 validation patches and 97 test patches, with no shared image footprints between subsets.
 
-### 1. Generate patches from orthomosaics and masks
+Nested subsets of 21, 42 and 63 adaptation patches were evaluated using three paired repetitions. Validation data controlled checkpoint selection and early stopping. Final metrics count each annotated geographic pixel once after averaging overlapping predictions.
 
-```bash
-python scripts/generate_patches.py --data_dir <path_to_mendeley_data> --patch_size 256 --stride 128
-```
+Full reproduction instructions are provided in:
 
-### 2. Train U-Net (spectral configuration comparison + spatial validation)
+[revision_controlada/README.md](revision_controlada/README.md)
 
-```bash
-python scripts/train_unet_spatial.py --config full --data_dir <path>
-```
+## Versioned release and source checkpoint
 
-Reproduces: Table 1, Figures 3, 6, and 7.
+The version associated with the controlled experiment is:
 
-### 3. Train DeepLabv3 / Random Forest (architecture comparison)
+[Release v2.0.0](https://github.com/patitostyle/weed-detection-barley-rapeseed/releases/tag/v2.0.0)
+
+The retained barley initialization checkpoint, `cebada_best_model.pth`, is attached to that release.
+
+Download instructions, provenance and its SHA256 checksum are documented in:
+
+[MODEL_CHECKPOINT.md](revision_controlada/MODEL_CHECKPOINT.md)
+
+The 18 target-domain checkpoints are not included in this repository. They can be regenerated using the documented training procedure.
+
+## Inspecting the reported results
+
+The repository includes:
+
+- Fixed spatial partition lists.
+- Nine nested adaptation-subset lists.
+- The recorded experimental settings.
+- Training histories and selected epochs for all 18 runs.
+- Confusion matrices and metrics for the direct-transfer baseline and all trained runs.
+- A CSV summary of the reported results.
+- Annotation audits and inputs used to prepare the revised figures.
+
+To verify the archived evidence without training or loading the image dataset:
 
 ```bash
-python scripts/train_deeplabv3.py --data_dir <path>
-python scripts/train_random_forest.py --data_dir <path>
+cd revision_controlada
+python code/verify_release.py
 ```
 
-Reproduces: Table 2, Figure 4.
+This verification uses the Python standard library. Training and figure generation require the dependencies described in the reproduction instructions.
 
-### 4. Few-shot fine-tuning on rapeseed
+## Scope of the results
 
-```bash
-python scripts/finetune_colza.py --n_patches 63 --mode full --data_dir <path>
-```
+The controlled experiment evaluates local adaptation within one rapeseed field. Repeated runs share the same fixed test set and do not represent independent field or seasonal replicates.
 
-Reproduces: Figure 8.
+The source checkpoint was selected using Barley 2 validation. Spatial prediction maps are model-derived scores, not independently validated weed-density measurements or herbicide prescriptions.
 
-## License
+## Licence
 
-See [LICENSE](LICENSE) for details.
+Source code is distributed under the MIT licence; see [LICENSE](LICENSE).
+
+The dataset and image-derived materials are subject to the terms stated in the Mendeley Data repository.
