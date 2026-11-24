@@ -1,0 +1,58 @@
+{
+  "new_unet_runs": 9,
+  "new_forest_fits": 6,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "normalization": "patch_valid",
+  "spectral_configs": {
+    "rgb": [
+      0,
+      1,
+      2
+    ],
+    "rgb_nir_re": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rgb_indices": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      7
+    ]
+  },
+  "full_config": "reused from completed DeepLab benchmark, three source U-Nets",
+  "partition": "C:\\Users\\PATRICIO HERNANDEZ\\Downloads\\manuscrito\\revision_revisor1\\staged_v2\\partitions.json",
+  "checkpoint_selection": "Barley1 spatial validation weed F1 only",
+  "neural_training": {
+    "batch_size": 4,
+    "lr": 0.0001,
+    "max_epochs": 30,
+    "patience": 7,
+    "loss": "unweighted cross entropy",
+    "augmentation": "paired right-angle rotations and flips"
+  },
+  "forest": {
+    "trees": 200,
+    "n_jobs": 4,
+    "max_features": "sqrt",
+    "class_weight": null,
+    "sample_limit": 300000,
+    "sampling": "without replacement from unique labelled geographic pixels within each acquisition; deterministic first patch occurrence",
+    "features": [
+      "8 spectral channels",
+      "8 spectral + 3x3 per-channel means and standard deviations"
+    ],
+    "warm_start_batch_trees": 25
+  },
+  "evaluation": "identical unique annotated Barley2-V2 geographic pixels for all models; average patch probabilities before argmax",
+  "scope": "retrospective source comparison, no architecture-specific optimization and no new acquisition data"
+}

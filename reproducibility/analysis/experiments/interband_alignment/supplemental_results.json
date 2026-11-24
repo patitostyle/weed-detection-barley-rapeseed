@@ -1,0 +1,91 @@
+{
+  "protocol": {
+    "reason": "Primary red-reference comparison yielded few/no acceptable NIR or red-edge matches for some acquisitions.",
+    "timing": "Specified after primary results; exploratory supplemental comparison.",
+    "pairs": [
+      {
+        "reference": "NIR",
+        "target": "Red edge"
+      },
+      {
+        "reference": "Green",
+        "target": "NIR"
+      }
+    ],
+    "locations": "Same 10x10 candidate grid and fully valid 320px windows as primary analysis.",
+    "qc": "Identical fixed correlation, ambiguity and forward/reverse thresholds as primary.",
+    "scope": "Pairwise relative estimates only; no chained or surveyed registration accuracy claimed."
+  },
+  "summary": [
+    {
+      "field": "Barley 1 V1",
+      "reference": "NIR",
+      "target": "Red edge",
+      "valid_windows": 33,
+      "accepted": 15,
+      "median_px": 0.29538710526785356,
+      "p95_px": 0.4556147058440386
+    },
+    {
+      "field": "Barley 1 V1",
+      "reference": "Green",
+      "target": "NIR",
+      "valid_windows": 33,
+      "accepted": 0
+    },
+    {
+      "field": "Barley 1 V2",
+      "reference": "NIR",
+      "target": "Red edge",
+      "valid_windows": 33,
+      "accepted": 33,
+      "median_px": 0.13260033685138,
+      "p95_px": 0.36640441278411884
+    },
+    {
+      "field": "Barley 1 V2",
+      "reference": "Green",
+      "target": "NIR",
+      "valid_windows": 33,
+      "accepted": 33,
+      "median_px": 0.18473038017247215,
+      "p95_px": 0.427698450036214
+    },
+    {
+      "field": "Barley 2 V2",
+      "reference": "NIR",
+      "target": "Red edge",
+      "valid_windows": 35,
+      "accepted": 34,
+      "median_px": 0.15048896969620607,
+      "p95_px": 0.4017602572745477
+    },
+    {
+      "field": "Barley 2 V2",
+      "reference": "Green",
+      "target": "NIR",
+      "valid_windows": 35,
+      "accepted": 29,
+      "median_px": 0.16902038818466852,
+      "p95_px": 0.3006574054383935
+    },
+    {
+      "field": "Rapeseed V2",
+      "reference": "NIR",
+      "target": "Red edge",
+      "valid_windows": 31,
+      "accepted": 29,
+      "median_px": 0.18978188330349818,
+      "p95_px": 0.3373374240364291
+    },
+    {
+      "field": "Rapeseed V2",
+      "reference": "Green",
+      "target": "NIR",
+      "valid_windows": 31,
+      "accepted": 20,
+      "median_px": 1.063923470383841,
+      "p95_px": 1.228805324177995
+    }
+  ]
+}

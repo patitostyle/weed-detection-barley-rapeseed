@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Model binaries are distributed as release assets.
+*.pth
+*.pt
+*.joblib
+__pycache__/
+*.pyc
+
+# Rendering previews are local QA artifacts.
+reproducibility/**/figures/*_preview.png

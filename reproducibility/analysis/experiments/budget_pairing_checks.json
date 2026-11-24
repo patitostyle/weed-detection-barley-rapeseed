@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "fold_seed_combinations": 25,
+  "nested_subset_membership": true,
+  "full_subsets_equal_adaptation_pools": true,
+  "matched_primary_training_and_validation_id_pairs": 75,
+  "note": "Saved subset lists use dataset-prefixed IDs and dataset order; nesting verified by normalized-ID set inclusion, not saved-list prefix order."
+}

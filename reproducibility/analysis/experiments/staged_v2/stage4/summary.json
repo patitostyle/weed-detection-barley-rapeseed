@@ -1,0 +1,113 @@
+{
+  "stage": 4,
+  "training_runs": 25,
+  "complete": true,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "budgets": [
+    63
+  ],
+  "scope": "Within-field evaluation of five weed-bearing spatial groups; not independent-field replication.",
+  "interval_note": "Exploratory hierarchical bootstrap over groups and paired repetitions. Small group count and overlapping training sets limit inference. No pixel-level resampling.",
+  "metrics": [
+    {
+      "budget": 63,
+      "strategy": "partial",
+      "group_by_seed_F1": [
+        [
+          0.04806751289055083,
+          0.05222495330975642,
+          0.04497273034686394,
+          0.05875635345896445,
+          0.03418283511344246
+        ],
+        [
+          0.5019867549668874,
+          0.8790882061446977,
+          0.7552620718118036,
+          0.8949682462139716,
+          0.8215681166970565
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9188572065047895,
+          0.9513795423956931,
+          0.9458700440528635,
+          0.9516093474426808,
+          0.9271651855873361
+        ],
+        [
+          0.0460314503898039,
+          0.04453131190407015,
+          0.02888220319370516,
+          0.03019392100597664,
+          0.03332713869788763
+        ]
+      ],
+      "pooled_group_confusions_F1_per_seed": [
+        0.10027413207157476,
+        0.11304816187406044,
+        0.10333632152757763,
+        0.11456343494150062,
+        0.09632793982285369
+      ],
+      "pooled_F1_mean": 0.10550999804751342,
+      "pooled_F1_sample_sd": 0.00798808470225536
+    }
+  ],
+  "comparisons": [
+    {
+      "budget": 63,
+      "first": "partial",
+      "second": "full",
+      "pairs": 25,
+      "wins_first": 13,
+      "ties": 4,
+      "wins_second": 8,
+      "mean_paired_difference_equal_weight_per_group": 0.019163450202046538,
+      "group_mean_differences": [
+        0.036630100537689766,
+        0.07530929546853156,
+        -0.028332421233679933,
+        -0.01553169588326211,
+        0.027741972120953428
+      ],
+      "exploratory_within_field_95_stability_interval": [
+        -0.020643112355546694,
+        0.07474516928074537
+      ]
+    },
+    {
+      "budget": 63,
+      "first": "partial",
+      "second": "scratch",
+      "pairs": 25,
+      "wins_first": 14,
+      "ties": 0,
+      "wins_second": 11,
+      "mean_paired_difference_equal_weight_per_group": 0.17642487698692552,
+      "group_mean_differences": [
+        0.039440409264505205,
+        0.28136997563963634,
+        -0.0903069703934454,
+        0.6687223230498972,
+        -0.017101352625965988
+      ],
+      "exploratory_within_field_95_stability_interval": [
+        -0.033720924058510564,
+        0.44994799292593246
+      ]
+    }
+  ]
+}

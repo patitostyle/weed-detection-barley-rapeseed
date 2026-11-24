@@ -1,0 +1,155 @@
+{
+  "budget": 63,
+  "groups": [
+    2,
+    4,
+    6,
+    7,
+    8
+  ],
+  "scope": "Pooled test-group confusion matrices separately per seed; same three seeds for both normalizations",
+  "rows": [
+    {
+      "normalization": "patch_valid",
+      "strategy": "scratch",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "f1_iou_by_seed": [
+        [
+          0.019646809772377795,
+          0.009920861525776412
+        ],
+        [
+          0.04352899100036599,
+          0.02224872783707787
+        ],
+        [
+          0.057071717802619895,
+          0.029374073312718414
+        ]
+      ],
+      "mean": [
+        0.040082506191787895,
+        0.0205145542251909
+      ],
+      "sample_sd": [
+        0.018949000723516782,
+        0.00984186876533256
+      ]
+    },
+    {
+      "normalization": "patch_valid",
+      "strategy": "full",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "f1_iou_by_seed": [
+        [
+          0.06614045196286289,
+          0.0342012696992371
+        ],
+        [
+          0.07693947471192036,
+          0.04000886799982264
+        ],
+        [
+          0.10821350635988748,
+          0.05720175438596491
+        ]
+      ],
+      "mean": [
+        0.08376447767822358,
+        0.04380396402834155
+      ],
+      "sample_sd": [
+        0.0218511092553967,
+        0.011960670522816026
+      ]
+    },
+    {
+      "normalization": "source_fixed",
+      "strategy": "scratch",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "f1_iou_by_seed": [
+        [
+          0.030588939039643263,
+          0.015532023581063356
+        ],
+        [
+          0.039188150487151255,
+          0.01998567608457043
+        ],
+        [
+          0.018432217699104178,
+          0.009301835578746451
+        ]
+      ],
+      "mean": [
+        0.029403102408632895,
+        0.014939845081460077
+      ],
+      "sample_sd": [
+        0.010428654892269972,
+        0.0053664810183224896
+      ]
+    },
+    {
+      "normalization": "source_fixed",
+      "strategy": "full",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "f1_iou_by_seed": [
+        [
+          0.07835260622842768,
+          0.040773664555934404
+        ],
+        [
+          0.06579401738411818,
+          0.03401603447381351
+        ],
+        [
+          0.07717683341327833,
+          0.04013724962045154
+        ]
+      ],
+      "mean": [
+        0.07377448567527474,
+        0.03830898288339982
+      ],
+      "sample_sd": [
+        0.006936246538137716,
+        0.0037313952521883307
+      ]
+    }
+  ],
+  "direct_transfer": [
+    {
+      "normalization": "patch_valid",
+      "strategy": "direct_transfer",
+      "source_seed": 42,
+      "f1": 0.09087603405957395,
+      "iou": 0.047600907893274924,
+      "note": "Fixed source checkpoint, no target fitting and no between-training SD."
+    },
+    {
+      "normalization": "source_fixed",
+      "strategy": "direct_transfer",
+      "source_seed": 42,
+      "f1": 0.08921258674946042,
+      "iou": 0.04668891271253261,
+      "note": "Fixed source checkpoint, no target fitting and no between-training SD."
+    }
+  ]
+}

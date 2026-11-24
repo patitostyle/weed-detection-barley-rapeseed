@@ -1,0 +1,64 @@
+{
+  "field_map_crs": "EPSG:25830",
+  "field_map_crs_name": "ETRS89 / UTM zone 30N",
+  "locator_crs": "EPSG:4326",
+  "site_marker": "centroid of the union of the three original field geometries",
+  "site_marker_longitude_latitude": [
+    -3.354089023359272,
+    40.618480028032465
+  ],
+  "scale_bar_metres": 200,
+  "north_arrow": "true-north direction derived by geographic-to-projected transformation",
+  "country_boundaries_source": "Natural Earth, Admin 0 countries, 1:110 million",
+  "country_boundaries_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+  "country_boundaries_sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+  "raster_dpi": 400,
+  "embedded_footer": "removed at author request; CRS and Natural Earth attribution remain in the LaTeX caption",
+  "figsize_inches": [
+    8.0,
+    6.7
+  ],
+  "fields": [
+    {
+      "field": "Barley 1",
+      "role": "Source training and validation",
+      "color": "#78AED0",
+      "area_ha": 11.826495416249381,
+      "source": "C:\\datos tfm\\areas\\cebada_divi.shp",
+      "source_files_sha256": {
+        ".shp": "a14c980b2b41b4d65bb4732cdbff2cd7743fe928f4b1203028cfe6409ed55eb7",
+        ".shx": "8a4eebce8c77a3adaac972d5fcd473f27dc3e8150257b9da469a50bee212f4d6",
+        ".dbf": "ab2dd576e3f285f55a2c32fefc06b6ed951b1e836778c3375fbebdd636ee1a2b",
+        ".prj": "03329a8b83248ce6963187291d05a46dfd70b28854fccb01c3fcabd2a28fdcce"
+      }
+    },
+    {
+      "field": "Barley 2",
+      "role": "Retrospective evaluation",
+      "color": "#E9BB64",
+      "area_ha": 15.931348415876926,
+      "source": "C:\\datos tfm\\areas\\cebada2.shp",
+      "source_files_sha256": {
+        ".shp": "4e2f7e2373e7dc1b88d88a9861d8f51399f5fe16d7b2548556c38578697cb203",
+        ".shx": "6fefc3ad24cc3ab417a44297bbea8ac0a0fe946b069da1ab006016eae4007637",
+        ".dbf": "4277864960b7cd3244327046416e48b9edfb5af85850e42b1bae7aae5fe8cb0b",
+        ".prj": "03329a8b83248ce6963187291d05a46dfd70b28854fccb01c3fcabd2a28fdcce"
+      }
+    },
+    {
+      "field": "Rapeseed",
+      "role": "Cross-crop transfer and adaptation",
+      "color": "#74BBA4",
+      "area_ha": 8.389205488298321,
+      "source": "C:\\datos tfm\\areas\\colza.shp",
+      "source_files_sha256": {
+        ".shp": "8093864e47f96b67eb320009fe1ca8c6996a13c02260b803d9b2995b5486cb80",
+        ".shx": "49497fb697954f8f6ecb0545ca1140e935b5c114e69bc49fa49172c992a96226",
+        ".dbf": "445093722f04878d41947733385fa82028cc51ea9782e88ec65a64a8917ac269",
+        ".prj": "03329a8b83248ce6963187291d05a46dfd70b28854fccb01c3fcabd2a28fdcce"
+      }
+    }
+  ],
+  "code_sha256": "1bca83d13d0be37e3658b83751ee22d2a4c8d259fa7d7feccca3657167534087",
+  "original_sources_modified": false
+}

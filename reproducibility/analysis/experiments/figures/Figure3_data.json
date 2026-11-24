@@ -1,0 +1,158 @@
+{
+  "coordinate_origin_easting_northing_m": [
+    470032.30377000006,
+    4496149.469290001
+  ],
+  "retained_patches": 423,
+  "weed_annotated_patches": 80,
+  "groups": [
+    {
+      "group": 0,
+      "patches": 41,
+      "weed_patches": 0
+    },
+    {
+      "group": 1,
+      "patches": 37,
+      "weed_patches": 0
+    },
+    {
+      "group": 2,
+      "patches": 118,
+      "weed_patches": 23
+    },
+    {
+      "group": 3,
+      "patches": 27,
+      "weed_patches": 0
+    },
+    {
+      "group": 4,
+      "patches": 6,
+      "weed_patches": 6
+    },
+    {
+      "group": 5,
+      "patches": 24,
+      "weed_patches": 0
+    },
+    {
+      "group": 6,
+      "patches": 56,
+      "weed_patches": 11
+    },
+    {
+      "group": 7,
+      "patches": 33,
+      "weed_patches": 18
+    },
+    {
+      "group": 8,
+      "patches": 81,
+      "weed_patches": 22
+    }
+  ],
+  "folds": [
+    {
+      "test_group": 2,
+      "validation_group": 8,
+      "roles": {
+        "0": "A",
+        "1": "A",
+        "2": "T",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "V"
+      },
+      "adaptation_validation_test_patch_counts": [
+        224,
+        81,
+        118
+      ]
+    },
+    {
+      "test_group": 4,
+      "validation_group": 8,
+      "roles": {
+        "0": "A",
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "T",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "V"
+      },
+      "adaptation_validation_test_patch_counts": [
+        336,
+        81,
+        6
+      ]
+    },
+    {
+      "test_group": 6,
+      "validation_group": 8,
+      "roles": {
+        "0": "A",
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "T",
+        "7": "A",
+        "8": "V"
+      },
+      "adaptation_validation_test_patch_counts": [
+        286,
+        81,
+        56
+      ]
+    },
+    {
+      "test_group": 7,
+      "validation_group": 8,
+      "roles": {
+        "0": "A",
+        "1": "A",
+        "2": "A",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "T",
+        "8": "V"
+      },
+      "adaptation_validation_test_patch_counts": [
+        309,
+        81,
+        33
+      ]
+    },
+    {
+      "test_group": 8,
+      "validation_group": 2,
+      "roles": {
+        "0": "A",
+        "1": "A",
+        "2": "V",
+        "3": "A",
+        "4": "A",
+        "5": "A",
+        "6": "A",
+        "7": "A",
+        "8": "T"
+      },
+      "adaptation_validation_test_patch_counts": [
+        224,
+        118,
+        81
+      ]
+    }
+  ],
+  "note": "Map displays retained patch footprints, not a complete field boundary or individual weed plants."
+}

@@ -1,0 +1,16 @@
+{
+  "platform": "Windows; original entry points use msvcrt file locking",
+  "python": "3.11",
+  "packages": {
+    "torch": "2.13.0+cu126",
+    "torchvision": "0.28.0+cu126",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "tifffile": "2020.6.3",
+    "imagecodecs": "2026.3.6",
+    "matplotlib": "3.11.0",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.5.3",
+    "GDAL": "3.12.4"
+  }
+}

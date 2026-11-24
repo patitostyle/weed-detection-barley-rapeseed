@@ -1,0 +1,330 @@
+[
+  {
+    "epoch": 1,
+    "loss": 0.4578884057700634,
+    "validation": {
+      "f1": [
+        0.0,
+        0.0753078543950202,
+        0.8706436200112423
+      ],
+      "iou": [
+        0.0,
+        0.03912722071786136,
+        0.7709201766938344
+      ],
+      "miou": 0.2700157991372319,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          14679,
+          49,
+          49564
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "epoch": 2,
+    "loss": 0.6315981019288301,
+    "validation": {
+      "f1": [
+        0.0,
+        0.07482243213238937,
+        0.7699548480906099
+      ],
+      "iou": [
+        0.0,
+        0.03886521086741372,
+        0.6259565731350712
+      ],
+      "miou": 0.22160726133416164,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          22321,
+          1727,
+          40244
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "epoch": 3,
+    "loss": 0.3238427806645632,
+    "validation": {
+      "f1": [
+        0.0,
+        0.07478652168571077,
+        0.6879585318816771
+      ],
+      "iou": [
+        0.0,
+        0.0388458332169966,
+        0.5243420643314876
+      ],
+      "miou": 0.18772929918282807,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          28729,
+          1852,
+          33711
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "epoch": 4,
+    "loss": 0.5009686732664704,
+    "validation": {
+      "f1": [
+        0.0,
+        0.07483163075173556,
+        0.6058181266196099
+      ],
+      "iou": [
+        0.0,
+        0.03887017465436317,
+        0.4345330678778075
+      ],
+      "miou": 0.1578010808440569,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          34660,
+          1695,
+          27937
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "epoch": 5,
+    "loss": 0.24528433196246624,
+    "validation": {
+      "f1": [
+        0.0,
+        0.07492316509791401,
+        0.4846620705910082
+      ],
+      "iou": [
+        0.0,
+        0.03891957128128072,
+        0.31983761587755866
+      ],
+      "miou": 0.11958572905294645,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          42352,
+          1377,
+          20563
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "epoch": 6,
+    "loss": 0.3172363881021738,
+    "validation": {
+      "f1": [
+        0.0,
+        0.07495459163254625,
+        0.49171866935673064
+      ],
+      "iou": [
+        0.0,
+        0.03893653173413293,
+        0.32601256766005104
+      ],
+      "miou": 0.12164969979806133,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          42064,
+          1268,
+          20960
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "epoch": 7,
+    "loss": 0.27769624441862106,
+    "validation": {
+      "f1": [
+        0.0,
+        0.074908181905586,
+        0.4435379419703921
+      ],
+      "iou": [
+        0.0,
+        0.03891148526086157,
+        0.28496547004292916
+      ],
+      "miou": 0.10795898510126357,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          44542,
+          1429,
+          18321
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  {
+    "epoch": 8,
+    "loss": 0.24729627463966608,
+    "validation": {
+      "f1": [
+        0.0,
+        0.07516371396266897,
+        0.3371826869609073
+      ],
+      "iou": [
+        0.0,
+        0.03904940617958156,
+        0.20277795060038575
+      ],
+      "miou": 0.08060911892665577,
+      "confusion": [
+        [
+          0,
+          239118,
+          0
+        ],
+        [
+          0,
+          9739,
+          0
+        ],
+        [
+          50710,
+          545,
+          13037
+        ]
+      ],
+      "unique_labelled_pixels": 313149,
+      "counting_unit": "unique geographic pixel within each acquisition, never merged across dates",
+      "reference_classes_present": [
+        true,
+        true,
+        true
+      ]
+    }
+  }
+]

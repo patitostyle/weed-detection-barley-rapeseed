@@ -1,0 +1,150 @@
+{
+  "scope": "Estimator recovery only, not cross-band ground truth.",
+  "checks": [
+    {
+      "field": "Barley 1 V1",
+      "injected_dx": 0.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": 0.0003957751451754571,
+      "estimated_dy": -0.00018230081492713967,
+      "recovery_error_px": 0.0004357425302420609
+    },
+    {
+      "field": "Barley 1 V1",
+      "injected_dx": 1.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": 1.0003979021560145,
+      "estimated_dy": -0.00018598201958095603,
+      "recovery_error_px": 0.00043922139903291435
+    },
+    {
+      "field": "Barley 1 V1",
+      "injected_dx": 0.4,
+      "injected_dy": -0.3,
+      "contrast_inverted": false,
+      "estimated_dx": 0.25709741516247087,
+      "estimated_dy": -0.3389089431953163,
+      "recovery_error_px": 0.14810487707642706
+    },
+    {
+      "field": "Barley 1 V1",
+      "injected_dx": -2.0,
+      "injected_dy": 1.5,
+      "contrast_inverted": true,
+      "estimated_dx": -1.971231315295477,
+      "estimated_dy": 1.5067453984251655,
+      "recovery_error_px": 0.029548902171527124
+    },
+    {
+      "field": "Barley 1 V2",
+      "injected_dx": 0.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": -0.00012121951528447765,
+      "estimated_dy": 0.0007184884001653102,
+      "recovery_error_px": 0.0007286424034174176
+    },
+    {
+      "field": "Barley 1 V2",
+      "injected_dx": 1.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": 0.9998242930018602,
+      "estimated_dy": 0.0007043901770536057,
+      "recovery_error_px": 0.0007259741529317183
+    },
+    {
+      "field": "Barley 1 V2",
+      "injected_dx": 0.4,
+      "injected_dy": -0.3,
+      "contrast_inverted": false,
+      "estimated_dx": 0.3887509590788195,
+      "estimated_dy": -0.28580984016042454,
+      "recovery_error_px": 0.018108052295017635
+    },
+    {
+      "field": "Barley 1 V2",
+      "injected_dx": -2.0,
+      "injected_dy": 1.5,
+      "contrast_inverted": true,
+      "estimated_dx": -2.01385468050448,
+      "estimated_dy": 1.5006889412117475,
+      "recovery_error_px": 0.01387179915780451
+    },
+    {
+      "field": "Barley 2 V2",
+      "injected_dx": 0.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": 0.00190591266460923,
+      "estimated_dy": -2.1214885641877408e-05,
+      "recovery_error_px": 0.0019060307333541747
+    },
+    {
+      "field": "Barley 2 V2",
+      "injected_dx": 1.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": 1.0019166114695859,
+      "estimated_dy": -2.6193932656140277e-05,
+      "recovery_error_px": 0.0019167904547592444
+    },
+    {
+      "field": "Barley 2 V2",
+      "injected_dx": 0.4,
+      "injected_dy": -0.3,
+      "contrast_inverted": false,
+      "estimated_dx": 0.4011967396217112,
+      "estimated_dy": -0.27764248159309546,
+      "recovery_error_px": 0.022389524671981055
+    },
+    {
+      "field": "Barley 2 V2",
+      "injected_dx": -2.0,
+      "injected_dy": 1.5,
+      "contrast_inverted": true,
+      "estimated_dx": -2.0097135006280387,
+      "estimated_dy": 1.4968210018567665,
+      "recovery_error_px": 0.010220475705444912
+    },
+    {
+      "field": "Rapeseed V2",
+      "injected_dx": 0.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": 0.0010100692714513446,
+      "estimated_dy": -0.000448018419403998,
+      "recovery_error_px": 0.0011049707857022767
+    },
+    {
+      "field": "Rapeseed V2",
+      "injected_dx": 1.0,
+      "injected_dy": 0.0,
+      "contrast_inverted": false,
+      "estimated_dx": 1.001013586355787,
+      "estimated_dy": -0.00045393629404826024,
+      "recovery_error_px": 0.0011105923913352599
+    },
+    {
+      "field": "Rapeseed V2",
+      "injected_dx": 0.4,
+      "injected_dy": -0.3,
+      "contrast_inverted": false,
+      "estimated_dx": 0.39668489841430443,
+      "estimated_dy": -0.2866296167622731,
+      "recovery_error_px": 0.013775233081409885
+    },
+    {
+      "field": "Rapeseed V2",
+      "injected_dx": -2.0,
+      "injected_dy": 1.5,
+      "contrast_inverted": true,
+      "estimated_dx": -1.9965358979571175,
+      "estimated_dy": 1.5006760789172908,
+      "recovery_error_px": 0.0035294596846979056
+    }
+  ],
+  "max_recovery_error_px": 0.14810487707642706
+}

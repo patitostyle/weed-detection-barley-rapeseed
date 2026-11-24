@@ -1,0 +1,137 @@
+{
+  "scope": "Data-root environment configuration, path-only protocol relocation checks, disabling superseded full-grid CLI entry points. Original source copies preserved. No training hyperparameter, split, architecture, normalization or checkpoint-selection logic changed.",
+  "files": [
+    {
+      "file": "run_revision.py",
+      "original_sha256": "2972f8233bd7d66f5c2176bfe7e847bc97371acdec0591f4aeb67c71d7c2f340",
+      "packaged_sha256": "6ecf12d753f321c8c40706a7731ddeabf41b16849cf481ac63e867ed0c9b42bd",
+      "changed": true
+    },
+    {
+      "file": "staged_revision.py",
+      "original_sha256": "959b17a294bdacfd70f74bc2ff0df91d567ac1c6b08e0b130ae2e07a44184c51",
+      "packaged_sha256": "f721f0a454fad5b33b879aa41f651a3c3bd7062af073266089c68e9bd42b8202",
+      "changed": true
+    },
+    {
+      "file": "deeplab_benchmark.py",
+      "original_sha256": "548cfa41cfa8005499ece6fdfe93e0290b2b96a1cab667d418254e12fc18771e",
+      "packaged_sha256": "cbbb514e092a0ff9ab8ee84368321e0a356637424d9ed5702c6e0accc79ccd5d",
+      "changed": true
+    },
+    {
+      "file": "source_inputs_benchmark.py",
+      "original_sha256": "08019aecb47b0ff20245766499c3d01d861063feb82cbef65db67d86e7fc18d9",
+      "packaged_sha256": "5d4d0be3b1a4cb60548cd4c1416a13eb319d488dd5f61c3666bc27f43915893e",
+      "changed": true
+    },
+    {
+      "file": "architecture_comparison.py",
+      "original_sha256": "b5967a7c65e7a0fd1ab7b2f112ff9c008e7233d5b3c32dd437a1731e86f268b3",
+      "packaged_sha256": "e498a89a634876217055df108c5cf3cde44be23d21a09427663667e61e416e5e",
+      "changed": true
+    },
+    {
+      "file": "forest_comparison.py",
+      "original_sha256": "130c83398d84bf92c46379e302af5e35b3336123b320f37f7cdb20f0ce97e5c3",
+      "packaged_sha256": "1b07f75d96df0c20b3f5dd17b15161142a9035f6e6e95cfa90078bc9e6d14c0b",
+      "changed": true
+    },
+    {
+      "file": "spectral_comparison.py",
+      "original_sha256": "01a113b0c09bdc3d3e8eb62069b87a37f42e7689bc092727a22ebc544c742ab0",
+      "packaged_sha256": "80e820b89a1f2dcc52e083401a42a33499801663f3aaea28741b4e195097e53b",
+      "changed": true
+    },
+    {
+      "file": "audit_inputs.py",
+      "original_sha256": "9262d436c00e0ee11c916a4841fa58d716cf2c9f24f73a222246ad4bfeced191",
+      "packaged_sha256": "9002989ec7175ee451e72ea28ec3b9c380007003c5a711a0ea52511002b51ec8",
+      "changed": true
+    },
+    {
+      "file": "summarize_stage.py",
+      "original_sha256": "2a34614ed24f6581cf494316685115f7c0bbe155ac5b6103311c80bc94029291",
+      "packaged_sha256": "2a34614ed24f6581cf494316685115f7c0bbe155ac5b6103311c80bc94029291",
+      "changed": false
+    },
+    {
+      "file": "summarize_stage1.py",
+      "original_sha256": "a43e5d719d71c2717aa034cb67c95ab6cde6c730675c58acc3aa639fe4dae164",
+      "packaged_sha256": "a43e5d719d71c2717aa034cb67c95ab6cde6c730675c58acc3aa639fe4dae164",
+      "changed": false
+    },
+    {
+      "file": "make_figure3.py",
+      "original_sha256": "6803fecfaa20e54a9358e3f90706b3ae50e2b1b24e2849faccc061f8366b1657",
+      "packaged_sha256": "6803fecfaa20e54a9358e3f90706b3ae50e2b1b24e2849faccc061f8366b1657",
+      "changed": false
+    },
+    {
+      "file": "make_figure4.py",
+      "original_sha256": "70d15dd86b0a66d1001ed5f81bd6816b86eb63b80808072c759f714b2d273ecd",
+      "packaged_sha256": "70d15dd86b0a66d1001ed5f81bd6816b86eb63b80808072c759f714b2d273ecd",
+      "changed": false
+    },
+    {
+      "file": "make_figure5.py",
+      "original_sha256": "f4a5bf69c35e264254c71b94c263c995d7c45621ca84e325253728e91598fda6",
+      "packaged_sha256": "f4a5bf69c35e264254c71b94c263c995d7c45621ca84e325253728e91598fda6",
+      "changed": false
+    },
+    {
+      "file": "make_figure6.py",
+      "original_sha256": "c57813663e5327b12bc1213b3e180a00c083eaeb160a9119d72783b2e68e39cc",
+      "packaged_sha256": "c57813663e5327b12bc1213b3e180a00c083eaeb160a9119d72783b2e68e39cc",
+      "changed": false
+    },
+    {
+      "file": "make_figure9.py",
+      "original_sha256": "d3e59236dd6972c8eec84a9116e75c2d995bb1c9d8ea0fb1f409f848e477b8ba",
+      "packaged_sha256": "d3e59236dd6972c8eec84a9116e75c2d995bb1c9d8ea0fb1f409f848e477b8ba",
+      "changed": false
+    },
+    {
+      "file": "assess_interband_alignment.py",
+      "original_sha256": "d78f68bdd85278700cfd0e7ca2407cb7cff54fc13fe03ebba7b839fceb04431f",
+      "packaged_sha256": "c3dfdfbc4091506462e411d4f8059dd6ac8131fd5608ccb5051ffb2a43bc4548",
+      "changed": true
+    },
+    {
+      "file": "review_interband_alignment.py",
+      "original_sha256": "8e46e49924abdd723c1e51e559e9d9697e47ebf21c90198cf323d6e7035ab7dd",
+      "packaged_sha256": "8e46e49924abdd723c1e51e559e9d9697e47ebf21c90198cf323d6e7035ab7dd",
+      "changed": false
+    },
+    {
+      "file": "finalize_alignment_audit.py",
+      "original_sha256": "37ed620cc6c23f36d5c735f60a4a8ad37332ba33cc8e7818fbee3b15752e5a23",
+      "packaged_sha256": "37ed620cc6c23f36d5c735f60a4a8ad37332ba33cc8e7818fbee3b15752e5a23",
+      "changed": false
+    },
+    {
+      "file": "audit_annotation_sizes.py",
+      "original_sha256": "47c1b0d82f23c45456f50109c2a37da45400b32425518d7b2659bea08fb77cf1",
+      "packaged_sha256": "16f0b441ee57850abc1aa8e7ac02390d7b4afeb54c311838697208bfd3925aee",
+      "changed": true
+    },
+    {
+      "file": "audit_class_proportions.py",
+      "original_sha256": "5fb61130d2474747a856df44823bdfa54bd10c22d18d312bdce5c64a04bdee91",
+      "packaged_sha256": "8ccf0edc7c943f3c172a95ed51c4741b6637f3c4ebd3ef9093dc44a1deb67384",
+      "changed": true
+    },
+    {
+      "file": "collect_checkpoint_epochs.py",
+      "original_sha256": "a77a3ea287997550f06c6c33f6567a9e8dadacb5b045bda38a70780acb1179e5",
+      "packaged_sha256": "a77a3ea287997550f06c6c33f6567a9e8dadacb5b045bda38a70780acb1179e5",
+      "changed": false
+    },
+    {
+      "file": "make_checkpoint_epoch_report.py",
+      "original_sha256": "854be37ae1f62ddd52ec9241da96fd7677b091518edaa4b422ac25e433edccf5",
+      "packaged_sha256": "854be37ae1f62ddd52ec9241da96fd7677b091518edaa4b422ac25e433edccf5",
+      "changed": false
+    }
+  ]
+}

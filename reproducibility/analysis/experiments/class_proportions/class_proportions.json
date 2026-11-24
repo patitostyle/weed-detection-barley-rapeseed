@@ -1,0 +1,125 @@
+{
+  "protocol": {
+    "denominator": "All unique annotated pixels (crop+weed+soil) within each retained patch pool; unlabelled pixels excluded.",
+    "spatial_unit": "Unique geographic pixel within one acquisition; observations across dates are not merged.",
+    "overlap": "Labels merged on the acquisition pixel grid; conflicting labels checked and absent.",
+    "input_validity": "Completed full input audit reports zero labelled pixels lacking valid values in any input channel for all four datasets; patch-ID sets cross-checked.",
+    "scope_note": "Dataset-level descriptive composition before source spatial buffer exclusions and target fold/budget sampling; not per-run training frequencies or field-wide cover.",
+    "checks": "Per-patch class counts matched original audit; Barley2 counts matched evaluation reference; rapeseed counts matched independent saved group summaries.",
+    "original_data_modified": false
+  },
+  "datasets": [
+    {
+      "dataset": "cebada_v1_rgb_nir_re_indices",
+      "display_name": "Barley 1-V1",
+      "patches": 726,
+      "pixel_size_m": 0.055159999999999106,
+      "scope": "Retained annotated patch pool before experimental partitioning; each labelled geographic pixel counted once within acquisition.",
+      "unique_annotated_pixels": 2024214,
+      "class_counts": {
+        "1": 1560765,
+        "2": 197327,
+        "3": 266122
+      },
+      "class_percentages": {
+        "1": 77.10474287797634,
+        "2": 9.748327004951058,
+        "3": 13.146930117072602
+      },
+      "conflicting_overlap_labels": 0,
+      "labelled_pixel_occurrences_including_overlap": 8096856,
+      "prior_input_audit_labelled_pixels_without_all_channels": 0,
+      "revised_source_training_validation_union": {
+        "patches": 695,
+        "unique_annotated_pixels": 1986417,
+        "class_counts": {
+          "1": 1538216,
+          "2": 197327,
+          "3": 250874
+        },
+        "class_percentages": {
+          "1": 77.43671142564729,
+          "2": 9.933815508022736,
+          "3": 12.62947306632998
+        }
+      }
+    },
+    {
+      "dataset": "cebada_v2_rgb_nir_re_indices",
+      "display_name": "Barley 1-V2",
+      "patches": 524,
+      "pixel_size_m": 0.05476999999999841,
+      "scope": "Retained annotated patch pool before experimental partitioning; each labelled geographic pixel counted once within acquisition.",
+      "unique_annotated_pixels": 1484845,
+      "class_counts": {
+        "1": 805572,
+        "2": 328194,
+        "3": 351079
+      },
+      "class_percentages": {
+        "1": 54.252935491583294,
+        "2": 22.1029130986736,
+        "3": 23.644151409743106
+      },
+      "conflicting_overlap_labels": 0,
+      "labelled_pixel_occurrences_including_overlap": 5939380,
+      "prior_input_audit_labelled_pixels_without_all_channels": 0,
+      "revised_source_training_validation_union": {
+        "patches": 500,
+        "unique_annotated_pixels": 1428650,
+        "class_counts": {
+          "1": 751492,
+          "2": 326079,
+          "3": 351079
+        },
+        "class_percentages": {
+          "1": 52.60154691491968,
+          "2": 22.82427466489343,
+          "3": 24.57417842018689
+        }
+      }
+    },
+    {
+      "dataset": "cebada_v2_C2_rgb_nir_re_indices",
+      "display_name": "Barley 2-V2",
+      "patches": 978,
+      "pixel_size_m": 0.05477000000000122,
+      "scope": "Retained annotated patch pool before experimental partitioning; each labelled geographic pixel counted once within acquisition.",
+      "unique_annotated_pixels": 4807496,
+      "class_counts": {
+        "1": 2975858,
+        "2": 1023369,
+        "3": 808269
+      },
+      "class_percentages": {
+        "1": 61.90037391606774,
+        "2": 21.286944388513273,
+        "3": 16.812681695418988
+      },
+      "conflicting_overlap_labels": 0,
+      "labelled_pixel_occurrences_including_overlap": 19229984,
+      "prior_input_audit_labelled_pixels_without_all_channels": 0
+    },
+    {
+      "dataset": "colza_v2_rgb_nir_re_indices",
+      "display_name": "Rapeseed-V2",
+      "patches": 423,
+      "pixel_size_m": 0.05476999999999837,
+      "scope": "Retained annotated patch pool before experimental partitioning; each labelled geographic pixel counted once within acquisition.",
+      "unique_annotated_pixels": 2005150,
+      "class_counts": {
+        "1": 1635480,
+        "2": 63649,
+        "3": 306021
+      },
+      "class_percentages": {
+        "1": 81.56397277011695,
+        "2": 3.174276238685385,
+        "3": 15.261750991197665
+      },
+      "conflicting_overlap_labels": 0,
+      "labelled_pixel_occurrences_including_overlap": 8017040,
+      "prior_input_audit_labelled_pixels_without_all_channels": 0
+    }
+  ]
+}

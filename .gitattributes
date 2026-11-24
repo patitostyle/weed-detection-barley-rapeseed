@@ -1,0 +1,2 @@
+# Preserve the exact byte hashes of archived reproducibility files.
+reproducibility/** -text

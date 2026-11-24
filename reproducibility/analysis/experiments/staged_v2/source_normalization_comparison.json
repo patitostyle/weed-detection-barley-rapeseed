@@ -1,0 +1,6 @@
+{
+  "source_batch_size_both": 4,
+  "target_batch_size_both": 8,
+  "source_seed_both": 42,
+  "reason": "match source training settings across normalization variants"
+}

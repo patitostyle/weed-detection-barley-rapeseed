@@ -1,0 +1,12 @@
+{
+  "seed": 44,
+  "trees": 200,
+  "sample_pixels": 300000,
+  "training_class_counts": [
+    187551,
+    50810,
+    61639
+  ],
+  "features": "texture",
+  "sample_sha256": "5f75c287c3d5de6e51fee17d2dcdd589f691edbf3a4f1d97a7738a1d82c0bf6b"
+}

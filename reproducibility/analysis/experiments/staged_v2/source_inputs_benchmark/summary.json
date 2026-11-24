@@ -1,0 +1,70 @@
+{
+  "models": [
+    {
+      "model": "forest_spectral",
+      "runs": 3,
+      "weed_f1_mean": 0.41323958185933957,
+      "weed_f1_sample_sd": 0.008680639145329372,
+      "weed_iou_mean": 0.2604549229389141,
+      "weed_iou_sample_sd": 0.006908598113378524,
+      "miou_mean": 0.31811593193760773,
+      "miou_sample_sd": 0.0025990368057424345
+    },
+    {
+      "model": "forest_texture",
+      "runs": 3,
+      "weed_f1_mean": 0.360585520501493,
+      "weed_f1_sample_sd": 0.002618564754975133,
+      "weed_iou_mean": 0.21994982336190858,
+      "weed_iou_sample_sd": 0.001950313378782479,
+      "miou_mean": 0.31447071864354464,
+      "miou_sample_sd": 0.0010786616572075083
+    },
+    {
+      "model": "unet_full",
+      "runs": 3,
+      "weed_f1_mean": 0.5573475157819571,
+      "weed_f1_sample_sd": 0.08927467762189215,
+      "weed_iou_mean": 0.38978113330439995,
+      "weed_iou_sample_sd": 0.08354318161737025,
+      "miou_mean": 0.41205549923214807,
+      "miou_sample_sd": 0.004378412892007944
+    },
+    {
+      "model": "unet_rgb",
+      "runs": 3,
+      "weed_f1_mean": 0.2226750183943318,
+      "weed_f1_sample_sd": 0.012213531162177115,
+      "weed_iou_mean": 0.12532206582863525,
+      "weed_iou_sample_sd": 0.0077398281616334,
+      "miou_mean": 0.30579531347991057,
+      "miou_sample_sd": 0.010921523343603195
+    },
+    {
+      "model": "unet_rgb_indices",
+      "runs": 3,
+      "weed_f1_mean": 0.5551095980686794,
+      "weed_f1_sample_sd": 0.12085731809793182,
+      "weed_iou_mean": 0.39054664233444986,
+      "weed_iou_sample_sd": 0.11413937379262679,
+      "miou_mean": 0.4259114718421879,
+      "miou_sample_sd": 0.013154613285370896
+    },
+    {
+      "model": "unet_rgb_nir_re",
+      "runs": 3,
+      "weed_f1_mean": 0.31815220698024654,
+      "weed_f1_sample_sd": 0.020728484342888917,
+      "weed_iou_mean": 0.1892885217825975,
+      "weed_iou_sample_sd": 0.014637868436123974,
+      "miou_mean": 0.369003116205596,
+      "miou_sample_sd": 0.00858177515087726
+    }
+  ],
+  "reference_class_counts": [
+    2975858,
+    1023369,
+    808269
+  ],
+  "scope": "same unique annotated Barley2 pixels; retrospective comparison, three training seeds; RF trained on a unique-pixel subsample while neural training uses patch occurrences"
+}

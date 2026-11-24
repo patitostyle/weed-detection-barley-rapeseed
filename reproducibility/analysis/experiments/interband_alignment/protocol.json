@@ -1,0 +1,31 @@
+{
+  "scope": "Retrospective image-structure-based relative alignment diagnostic of existing five-band analysis rasters.",
+  "not_measured": [
+    "Independent ground-coordinate accuracy",
+    "Phantom-to-Altum alignment",
+    "Causal effect of registration on F1"
+  ],
+  "reference_channel": "Red, stack channel 1 (one-based).",
+  "channels": [
+    "Red",
+    "Green",
+    "Blue",
+    "NIR",
+    "Red edge"
+  ],
+  "candidate_locations": "10 x 10 equally spaced centres over each raster bounding box; no selection using observed shifts.",
+  "read_window_px": 320,
+  "template_px": 224,
+  "search_radius_px": 16,
+  "preprocessing": "Per-window per-band 2nd/98th percentile scaling, clipping, Gaussian derivative magnitude with sigma=1 pixel. All-invalid windows rejected. No derived indices used for matching.",
+  "minimum_valid_fraction": 1.0,
+  "matching": "Normalized cross-correlation of gradient magnitudes; quadratic 3x3 subpixel peak refinement.",
+  "qc_fixed_before_results": {
+    "minimum_peak_ncc": 0.6,
+    "minimum_peak_margin_outside_2px_neighbourhood": 0.02,
+    "maximum_forward_reverse_closure_px": 1.0,
+    "reject_search_boundary_peaks": true
+  },
+  "reporting": "All attempts, reasons for exclusion, accepted counts, signed shifts, median/p95 displacement and RMS of estimated displacement. RMS is not independent checkpoint RMSE.",
+  "data_modification": "None. Input rasters opened read-only; no transformations applied."
+}

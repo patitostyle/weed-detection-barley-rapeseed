@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "source_seeds": [
+    42,
+    43,
+    44
+  ],
+  "target_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "normalizations": [
+    "patch_valid",
+    "source_fixed"
+  ],
+  "strategies": [
+    "scratch",
+    "full",
+    "partial"
+  ],
+  "budgets": [
+    21,
+    42,
+    63,
+    "full"
+  ],
+  "epochs": 30,
+  "patience": 7,
+  "min_delta": 0.0001,
+  "batch_size": 4,
+  "source_lr": 0.0001,
+  "scratch_lr": 0.0001,
+  "transfer_lr": 5e-05,
+  "augmentation": "paired horizontal/vertical flips and 90-degree rotations; no spectral jitter",
+  "weights": [
+    1,
+    3,
+    1.5
+  ],
+  "weights_note": "fixed inherited target weights, not inverse-frequency estimates",
+  "source_loss": "unweighted cross entropy",
+  "selection": "unique-pixel validation weed F1 only",
+  "source_fixed": "per-channel p02/p98 from deterministic source-training-only pixel sample; identical transform across domains",
+  "nodata": "exclude GDAL_NODATA and nonfinite values; ignore labels missing any input channel",
+  "scope": "retrospective within-field grouped evaluation; no independent rapeseed field",
+  "test_access": "only separate evaluate command after all scheduled runs have completed"
+}

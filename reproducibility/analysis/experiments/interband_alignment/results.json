@@ -1,0 +1,492 @@
+{
+  "status": "Image-based diagnostic; not independent geodetic validation. Visual QA required before manuscript use.",
+  "protocol": {
+    "scope": "Retrospective image-structure-based relative alignment diagnostic of existing five-band analysis rasters.",
+    "not_measured": [
+      "Independent ground-coordinate accuracy",
+      "Phantom-to-Altum alignment",
+      "Causal effect of registration on F1"
+    ],
+    "reference_channel": "Red, stack channel 1 (one-based).",
+    "channels": [
+      "Red",
+      "Green",
+      "Blue",
+      "NIR",
+      "Red edge"
+    ],
+    "candidate_locations": "10 x 10 equally spaced centres over each raster bounding box; no selection using observed shifts.",
+    "read_window_px": 320,
+    "template_px": 224,
+    "search_radius_px": 16,
+    "preprocessing": "Per-window per-band 2nd/98th percentile scaling, clipping, Gaussian derivative magnitude with sigma=1 pixel. All-invalid windows rejected. No derived indices used for matching.",
+    "minimum_valid_fraction": 1.0,
+    "matching": "Normalized cross-correlation of gradient magnitudes; quadratic 3x3 subpixel peak refinement.",
+    "qc_fixed_before_results": {
+      "minimum_peak_ncc": 0.6,
+      "minimum_peak_margin_outside_2px_neighbourhood": 0.02,
+      "maximum_forward_reverse_closure_px": 1.0,
+      "reject_search_boundary_peaks": true
+    },
+    "reporting": "All attempts, reasons for exclusion, accepted counts, signed shifts, median/p95 displacement and RMS of estimated displacement. RMS is not independent checkpoint RMSE.",
+    "data_modification": "None. Input rasters opened read-only; no transformations applied."
+  },
+  "metadata": [
+    {
+      "field": "Barley 1 V1",
+      "file": "C:\\datos tfm\\multibanda\\cebada_v1\\mb_rgb_nir_re_indices_cebada_v1.tif",
+      "width": 11366,
+      "height": 7800,
+      "transform": [
+        469771.04183000006,
+        0.055159999999999106,
+        0.0,
+        4496372.504070001,
+        0.0,
+        -0.05515999999995797
+      ],
+      "nodata": -3.4028234663852886e+38,
+      "projection": "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]"
+    },
+    {
+      "field": "Barley 1 V2",
+      "file": "C:\\datos tfm\\multibanda\\cebada_v2\\mb_rgb_nir_re_indices_cebada_v2.tif",
+      "width": 11447,
+      "height": 7856,
+      "transform": [
+        469771.05087000004,
+        0.05476999999999841,
+        0.0,
+        4496372.492730001,
+        0.0,
+        -0.054770000000038954
+      ],
+      "nodata": -3.4028234663852886e+38,
+      "projection": "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]"
+    },
+    {
+      "field": "Barley 2 V2",
+      "file": "C:\\datos tfm\\multibanda\\cebada_test\\mb_rgb_nir_re_indices_cebada_v2.tif",
+      "width": 8830,
+      "height": 13191,
+      "transform": [
+        469680.02313000005,
+        0.05477000000000122,
+        0.0,
+        4497142.997090001,
+        0.0,
+        -0.054769999999997765
+      ],
+      "nodata": -3.4028234663852886e+38,
+      "projection": "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]"
+    },
+    {
+      "field": "Rapeseed V2",
+      "file": "C:\\datos tfm\\multibanda\\colza_v2\\mb_rgb_nir_re_indices_colza_v2.tif",
+      "width": 9905,
+      "height": 6745,
+      "transform": [
+        469927.14537000004,
+        0.05476999999999837,
+        0.0,
+        4496492.98673,
+        0.0,
+        -0.05476999999989816
+      ],
+      "nodata": -3.4028234663852886e+38,
+      "projection": "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]"
+    }
+  ],
+  "summary": [
+    {
+      "field": "Barley 1 V1",
+      "band": "Green",
+      "attempts": 100,
+      "accepted": 4,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 29,
+        "ambiguous_peak": 2,
+        "closure": 0
+      },
+      "median_dx_px": 0.058044088664754974,
+      "median_dy_px": -0.2574870907269729,
+      "median_displacement_px": 0.3458096016166789,
+      "p95_displacement_px": 0.6256512861566638,
+      "rms_estimated_displacement_px": 0.4171652976183243,
+      "median_displacement_cm": 1.90748576251757,
+      "p95_displacement_cm": 3.4510924944401014,
+      "median_ncc": 0.7479601789640586
+    },
+    {
+      "field": "Barley 1 V1",
+      "band": "Blue",
+      "attempts": 100,
+      "accepted": 33,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 0,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.020524915974826197,
+      "median_dy_px": -0.09402206456867612,
+      "median_displacement_px": 0.19041575384301013,
+      "p95_displacement_px": 0.5848191734367326,
+      "rms_estimated_displacement_px": 0.3032060351868659,
+      "median_displacement_cm": 1.050333298198027,
+      "p95_displacement_cm": 3.2258625606769646,
+      "median_ncc": 0.862014018309449
+    },
+    {
+      "field": "Barley 1 V1",
+      "band": "NIR",
+      "attempts": 100,
+      "accepted": 22,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 11,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.1580371366611732,
+      "median_dy_px": 0.3277205843811398,
+      "median_displacement_px": 0.4211539024063433,
+      "p95_displacement_px": 0.8553363515054845,
+      "rms_estimated_displacement_px": 0.49775237651842713,
+      "median_displacement_cm": 2.323084925673352,
+      "p95_displacement_cm": 4.718035314904176,
+      "median_ncc": 0.6678885142688126
+    },
+    {
+      "field": "Barley 1 V1",
+      "band": "Red edge",
+      "attempts": 100,
+      "accepted": 0,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 33,
+        "ambiguous_peak": 3,
+        "closure": 0
+      }
+    },
+    {
+      "field": "Barley 1 V2",
+      "band": "Green",
+      "attempts": 100,
+      "accepted": 32,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 1,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.04284273904709596,
+      "median_dy_px": -0.13063012706338323,
+      "median_displacement_px": 0.20016625108486824,
+      "p95_displacement_px": 0.5204510030532635,
+      "rms_estimated_displacement_px": 0.33348912633511435,
+      "median_displacement_cm": 1.0963105571917915,
+      "p95_displacement_cm": 2.8505101437226417,
+      "median_ncc": 0.7714078023340167
+    },
+    {
+      "field": "Barley 1 V2",
+      "band": "Blue",
+      "attempts": 100,
+      "accepted": 33,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 0,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.06686969792597347,
+      "median_dy_px": -0.14507183040086302,
+      "median_displacement_px": 0.1744807211225535,
+      "p95_displacement_px": 0.6282055668036287,
+      "rms_estimated_displacement_px": 0.3113518835110614,
+      "median_displacement_cm": 0.9556309095881979,
+      "p95_displacement_cm": 3.440681889383375,
+      "median_ncc": 0.8708943257989635
+    },
+    {
+      "field": "Barley 1 V2",
+      "band": "NIR",
+      "attempts": 100,
+      "accepted": 2,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 31,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.13468904602896073,
+      "median_dy_px": -0.3988476450819204,
+      "median_displacement_px": 0.4209993899382198,
+      "p95_displacement_px": 0.48061742241138034,
+      "rms_estimated_displacement_px": 0.4261789801403894,
+      "median_displacement_cm": 2.3058136586915627,
+      "p95_displacement_cm": 2.6323416225470537,
+      "median_ncc": 0.6195822143092449
+    },
+    {
+      "field": "Barley 1 V2",
+      "band": "Red edge",
+      "attempts": 100,
+      "accepted": 30,
+      "rejection_counts": {
+        "invalid_pixels": 67,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 3,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.07557187027490408,
+      "median_dy_px": -0.2803530272569136,
+      "median_displacement_px": 0.32493191890245177,
+      "p95_displacement_px": 0.6054946545975687,
+      "rms_estimated_displacement_px": 0.36947077383330795,
+      "median_displacement_cm": 1.7796521198286768,
+      "p95_displacement_cm": 3.3162942232307877,
+      "median_ncc": 0.6985913180551762
+    },
+    {
+      "field": "Barley 2 V2",
+      "band": "Green",
+      "attempts": 100,
+      "accepted": 31,
+      "rejection_counts": {
+        "invalid_pixels": 65,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 4,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": -0.015330082290361926,
+      "median_dy_px": -0.06198146005610337,
+      "median_displacement_px": 0.17490170839456798,
+      "p95_displacement_px": 0.39721817307477403,
+      "rms_estimated_displacement_px": 0.22262673256246351,
+      "median_displacement_cm": 0.9579366568770701,
+      "p95_displacement_cm": 2.1755639339305857,
+      "median_ncc": 0.7700952619635202
+    },
+    {
+      "field": "Barley 2 V2",
+      "band": "Blue",
+      "attempts": 100,
+      "accepted": 35,
+      "rejection_counts": {
+        "invalid_pixels": 65,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 0,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.1390804413906965,
+      "median_dy_px": -0.009755795629015226,
+      "median_displacement_px": 0.20135569950414828,
+      "p95_displacement_px": 0.396513671807166,
+      "rms_estimated_displacement_px": 0.22354413627270558,
+      "median_displacement_cm": 1.1028251661842448,
+      "p95_displacement_cm": 2.1717053804878965,
+      "median_ncc": 0.8661963607603594
+    },
+    {
+      "field": "Barley 2 V2",
+      "band": "NIR",
+      "attempts": 100,
+      "accepted": 5,
+      "rejection_counts": {
+        "invalid_pixels": 65,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 30,
+        "ambiguous_peak": 2,
+        "closure": 0
+      },
+      "median_dx_px": 0.06791769907834683,
+      "median_dy_px": -0.15990000199235133,
+      "median_displacement_px": 0.19178559770074,
+      "p95_displacement_px": 0.20271853852890342,
+      "rms_estimated_displacement_px": 0.17518994413603572,
+      "median_displacement_cm": 1.0504097186069765,
+      "p95_displacement_cm": 1.1102894355228288,
+      "median_ncc": 0.6551342443228654
+    },
+    {
+      "field": "Barley 2 V2",
+      "band": "Red edge",
+      "attempts": 100,
+      "accepted": 28,
+      "rejection_counts": {
+        "invalid_pixels": 65,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 7,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": -0.027727742545588907,
+      "median_dy_px": -0.16413243682853101,
+      "median_displacement_px": 0.19318235422769892,
+      "p95_displacement_px": 0.3942314907501323,
+      "rms_estimated_displacement_px": 0.28594954622109714,
+      "median_displacement_cm": 1.0580597541051304,
+      "p95_displacement_cm": 2.1592058748385226,
+      "median_ncc": 0.715569552675959
+    },
+    {
+      "field": "Rapeseed V2",
+      "band": "Green",
+      "attempts": 100,
+      "accepted": 15,
+      "rejection_counts": {
+        "invalid_pixels": 69,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 16,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": 0.18515601098670637,
+      "median_dy_px": -0.07884275036621591,
+      "median_displacement_px": 0.3041199748797452,
+      "p95_displacement_px": 0.6707260107610289,
+      "rms_estimated_displacement_px": 0.35586464469226775,
+      "median_displacement_cm": 1.665665102416315,
+      "p95_displacement_cm": 3.673566360938046,
+      "median_ncc": 0.6547662571531638
+    },
+    {
+      "field": "Rapeseed V2",
+      "band": "Blue",
+      "attempts": 100,
+      "accepted": 18,
+      "rejection_counts": {
+        "invalid_pixels": 69,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 13,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": -0.032318876688760795,
+      "median_dy_px": -0.04109610507724097,
+      "median_displacement_px": 0.13387911642340244,
+      "p95_displacement_px": 0.4546358807961739,
+      "rms_estimated_displacement_px": 0.25403186620639473,
+      "median_displacement_cm": 0.7332559206509534,
+      "p95_displacement_cm": 2.4900407191205702,
+      "median_ncc": 0.7163468902217754
+    },
+    {
+      "field": "Rapeseed V2",
+      "band": "NIR",
+      "attempts": 100,
+      "accepted": 0,
+      "rejection_counts": {
+        "invalid_pixels": 69,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 31,
+        "ambiguous_peak": 7,
+        "closure": 3
+      }
+    },
+    {
+      "field": "Rapeseed V2",
+      "band": "Red edge",
+      "attempts": 100,
+      "accepted": 3,
+      "rejection_counts": {
+        "invalid_pixels": 69,
+        "low_texture": 0,
+        "boundary": 0,
+        "low_ncc": 28,
+        "ambiguous_peak": 0,
+        "closure": 0
+      },
+      "median_dx_px": -0.998461519216066,
+      "median_dy_px": 0.11677474197131121,
+      "median_displacement_px": 1.0052670022027583,
+      "p95_displacement_px": 1.0412004164498998,
+      "rms_estimated_displacement_px": 1.016133350515407,
+      "median_displacement_cm": 5.505847371064344,
+      "p95_displacement_cm": 5.7026546808959315,
+      "median_ncc": 0.6640135877391513
+    }
+  ],
+  "synthetic_verification": [
+    {
+      "injected_dx": 0,
+      "injected_dy": 0,
+      "estimated": {
+        "dx": 0.0009160486608503146,
+        "dy": -0.00033364574481578347,
+        "peak": 0.9999999999999991,
+        "margin": 0.7322724710493544,
+        "boundary": false,
+        "texture_energy": 2425.2680514828116
+      },
+      "error_px": 0.0009749177565719755
+    },
+    {
+      "injected_dx": 2.4,
+      "injected_dy": -3.2,
+      "estimated": {
+        "dx": 2.393835868465362,
+        "dy": -3.1952943061460024,
+        "peak": 0.9708929351771075,
+        "margin": 0.604371401460372,
+        "boundary": false,
+        "texture_energy": 2425.2680514828116
+      },
+      "error_px": 0.007755003044736338
+    },
+    {
+      "injected_dx": -7.0,
+      "injected_dy": 5.0,
+      "estimated": {
+        "dx": -6.999083951339149,
+        "dy": 4.999666354255184,
+        "peak": 0.9999999999999997,
+        "margin": 0.7322724710493549,
+        "boundary": false,
+        "texture_energy": 2425.2680514828116
+      },
+      "error_px": 0.0009749177565723861
+    },
+    {
+      "injected_dx": 12.0,
+      "injected_dy": -9.0,
+      "estimated": {
+        "dx": 12.000916048660851,
+        "dy": -9.000333645744815,
+        "peak": 0.9999999999999998,
+        "margin": 0.7322724710493551,
+        "boundary": false,
+        "texture_energy": 2425.2680514828116
+      },
+      "error_px": 0.0009749177565729167
+    }
+  ]
+}

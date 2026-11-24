@@ -1,0 +1,17 @@
+{
+  "reason": "Primary red-reference comparison yielded few/no acceptable NIR or red-edge matches for some acquisitions.",
+  "timing": "Specified after primary results; exploratory supplemental comparison.",
+  "pairs": [
+    {
+      "reference": "NIR",
+      "target": "Red edge"
+    },
+    {
+      "reference": "Green",
+      "target": "NIR"
+    }
+  ],
+  "locations": "Same 10x10 candidate grid and fully valid 320px windows as primary analysis.",
+  "qc": "Identical fixed correlation, ambiguity and forward/reverse thresholds as primary.",
+  "scope": "Pairwise relative estimates only; no chained or surveyed registration accuracy claimed."
+}

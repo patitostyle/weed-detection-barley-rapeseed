@@ -1,0 +1,7 @@
+numpy==2.4.6
+scipy==1.17.1
+tifffile==2020.6.3
+imagecodecs==2026.3.6
+matplotlib==3.11.0
+scikit-learn==1.9.0
+joblib==1.5.3

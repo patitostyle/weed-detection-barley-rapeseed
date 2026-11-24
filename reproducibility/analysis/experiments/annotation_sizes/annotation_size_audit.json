@@ -1,0 +1,326 @@
+{
+  "scope": "Read-only annotation size audit. Original saved vectors available locally for Barley1-V1 only. Other three study datasets assessed as raster connected regions.",
+  "author_description": "Crop and soil polygons were intended to be medium-sized; weed polygons were drawn according to what was visually distinguishable. No numerical size threshold has been documented.",
+  "vector": {
+    "file": "C:\\datos tfm\\etiquetas\\cebada_v1.shp",
+    "srs": "PROJCS[\"ETRS89 / UTM zone 30N\",GEOGCS[\"ETRS89\",DATUM[\"European_Terrestrial_Reference_System_1989\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6258\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4258\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"25830\"]]",
+    "feature_count": 59,
+    "class_stats_area_m2": {
+      "crop": {
+        "n": 20,
+        "minimum": 6.014796063056565,
+        "p25": 85.29085781238246,
+        "median": 194.93501364043914,
+        "p75": 288.72271048813127,
+        "maximum": 867.6979282107204,
+        "sum": 4748.69501179317
+      },
+      "weed": {
+        "n": 35,
+        "minimum": 1.7353243239340372,
+        "p25": 7.541533898605849,
+        "median": 12.136576785007492,
+        "p75": 23.174929403699934,
+        "maximum": 68.37445178453345,
+        "sum": 600.4250123338006
+      },
+      "soil": {
+        "n": 4,
+        "minimum": 89.45603314065374,
+        "p25": 159.53014609598904,
+        "median": 191.36562081356533,
+        "p75": 234.26427780053928,
+        "maximum": 337.52793756406754,
+        "sum": 809.715212331852
+      }
+    },
+    "interpretation": "Measured stored polygon feature areas, not individual plant sizes or prescribed annotation thresholds."
+  },
+  "vector_mask_comparison": {
+    "scope": "Diagnostic rasterization of saved vector onto existing mask grid, pixel-centre convention. Boundary rasterization conventions may differ.",
+    "vector_nonzero_pixels": 2024214,
+    "mask_nonzero_pixels": 2024214,
+    "agreement_on_vector_nonzero": 1.0,
+    "agreement_on_labelled_union": 1.0
+  },
+  "rasters": [
+    {
+      "dataset": "Barley 1 V1",
+      "file": "C:\\datos tfm\\etiquetas\\mask_cebada_v1.tif",
+      "shape": [
+        7800,
+        11366
+      ],
+      "pixel_area_m2": 0.0030426255999999015,
+      "pixel_size_x_m": 0.055159999999999106,
+      "projection": "PROJCS[\"ETRS89 / UTM zone 30N\",GEOGCS[\"ETRS89\",DATUM[\"European_Terrestrial_Reference_System_1989\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6258\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4258\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"25830\"]]",
+      "class_pixels": {
+        "0": 86630586,
+        "1": 1560765,
+        "2": 197327,
+        "3": 266122
+      },
+      "labelled_pixels": 2024214,
+      "labelled_fraction_of_raster_bounding_box": 0.022832536986153035,
+      "class_fraction_of_labelled": {
+        "crop": 0.7710474287797634,
+        "weed": 0.09748327004951057,
+        "soil": 0.13146930117072603
+      },
+      "scope": "Whole saved mask, not necessarily the exact union of retained evaluation patches."
+    },
+    {
+      "dataset": "Barley 1 V2",
+      "file": "C:\\datos tfm\\etiquetas\\mask_cebada_v2.tif",
+      "shape": [
+        7857,
+        11447
+      ],
+      "pixel_area_m2": 0.002999752899999826,
+      "pixel_size_x_m": 0.05476999999999841,
+      "projection": "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]",
+      "class_pixels": {
+        "0": 88454234,
+        "1": 805572,
+        "2": 328194,
+        "3": 351079
+      },
+      "labelled_pixels": 1484845,
+      "labelled_fraction_of_raster_bounding_box": 0.016509453026531437,
+      "class_fraction_of_labelled": {
+        "crop": 0.542529354915833,
+        "weed": 0.221029130986736,
+        "soil": 0.23644151409743105
+      },
+      "scope": "Whole saved mask, not necessarily the exact union of retained evaluation patches."
+    },
+    {
+      "dataset": "Barley 2 V2",
+      "file": "C:\\datos tfm\\etiquetas\\mask_cebada_v2_c2.tif",
+      "shape": [
+        13191,
+        8830
+      ],
+      "pixel_area_m2": 0.0029997529000001335,
+      "pixel_size_x_m": 0.05477000000000122,
+      "projection": "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]",
+      "class_pixels": {
+        "0": 111669034,
+        "1": 2975858,
+        "2": 1023369,
+        "3": 808269
+      },
+      "labelled_pixels": 4807496,
+      "labelled_fraction_of_raster_bounding_box": 0.04127437518957682,
+      "class_fraction_of_labelled": {
+        "crop": 0.6190037391606774,
+        "weed": 0.2128694438851327,
+        "soil": 0.16812681695418988
+      },
+      "scope": "Whole saved mask, not necessarily the exact union of retained evaluation patches."
+    },
+    {
+      "dataset": "Rapeseed V2",
+      "file": "C:\\datos tfm\\etiquetas\\mask_colza_v2.tif",
+      "shape": [
+        6745,
+        9906
+      ],
+      "pixel_area_m2": 0.0029997528999998213,
+      "pixel_size_x_m": 0.05476999999999837,
+      "projection": "PROJCS[\"WGS 84 / UTM zone 30N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-3],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32630\"]]",
+      "class_pixels": {
+        "0": 64810820,
+        "1": 1635480,
+        "2": 63649,
+        "3": 306021
+      },
+      "labelled_pixels": 2005150,
+      "labelled_fraction_of_raster_bounding_box": 0.030010041012650118,
+      "class_fraction_of_labelled": {
+        "crop": 0.8156397277011694,
+        "weed": 0.03174276238685385,
+        "soil": 0.15261750991197667
+      },
+      "scope": "Whole saved mask, not necessarily the exact union of retained evaluation patches."
+    }
+  ],
+  "raster_regions": [
+    {
+      "dataset": "Barley 1 V1",
+      "class": "crop",
+      "regions": 21,
+      "min_pixels": 4.0,
+      "median_pixels": 59130.0,
+      "max_pixels": 285180.0,
+      "min_area_m2": 0.012170502399999606,
+      "p25_area_m2": 79.93585976319741,
+      "median_area_m2": 179.91045172799417,
+      "p75_area_m2": 275.26025278079106,
+      "max_area_m2": 867.695968607972,
+      "total_area_m2": 4748.823544583847
+    },
+    {
+      "dataset": "Barley 1 V1",
+      "class": "weed",
+      "regions": 35,
+      "min_pixels": 573.0,
+      "median_pixels": 3991.0,
+      "max_pixels": 22470.0,
+      "min_area_m2": 1.7434244687999436,
+      "p25_area_m2": 7.536583611199756,
+      "median_area_m2": 12.143118769599607,
+      "p75_area_m2": 23.17415788239925,
+      "max_area_m2": 68.36779723199778,
+      "total_area_m2": 600.3921817711805
+    },
+    {
+      "dataset": "Barley 1 V1",
+      "class": "soil",
+      "regions": 4,
+      "min_pixels": 29398.0,
+      "median_pixels": 62893.0,
+      "max_pixels": 110938.0,
+      "min_area_m2": 89.44710738879711,
+      "p25_area_m2": 159.52866348999484,
+      "median_area_m2": 191.3598518607938,
+      "p75_area_m2": 234.25859085159243,
+      "max_area_m2": 337.5427988127891,
+      "total_area_m2": 809.7096099231738
+    },
+    {
+      "dataset": "Barley 1 V2",
+      "class": "crop",
+      "regions": 13,
+      "min_pixels": 11299.0,
+      "median_pixels": 54357.0,
+      "max_pixels": 140477.0,
+      "min_area_m2": 33.89420801709804,
+      "p25_area_m2": 117.91728674609317,
+      "median_area_m2": 163.05756838529055,
+      "p75_area_m2": 239.7552505324861,
+      "max_area_m2": 421.39628813327556,
+      "total_area_m2": 2416.51694315866
+    },
+    {
+      "dataset": "Barley 1 V2",
+      "class": "weed",
+      "regions": 18,
+      "min_pixels": 2115.0,
+      "median_pixels": 13695.5,
+      "max_pixels": 68874.0,
+      "min_area_m2": 6.344477383499632,
+      "p25_area_m2": 16.976351599324015,
+      "median_area_m2": 41.08311584194762,
+      "p75_area_m2": 76.59944023972056,
+      "max_area_m2": 206.60498123458802,
+      "total_area_m2": 984.5009032625429
+    },
+    {
+      "dataset": "Barley 1 V2",
+      "class": "soil",
+      "regions": 7,
+      "min_pixels": 23573.0,
+      "median_pixels": 42508.0,
+      "max_pixels": 83933.0,
+      "min_area_m2": 70.7131751116959,
+      "p25_area_m2": 111.59980713869354,
+      "median_area_m2": 127.5134962731926,
+      "p75_area_m2": 189.97285128053898,
+      "max_area_m2": 251.7782601556854,
+      "total_area_m2": 1053.150248379039
+    },
+    {
+      "dataset": "Barley 2 V2",
+      "class": "crop",
+      "regions": 12,
+      "min_pixels": 33162.0,
+      "median_pixels": 215783.5,
+      "max_pixels": 561351.0,
+      "min_area_m2": 99.47780566980443,
+      "p25_area_m2": 307.93888401128874,
+      "median_area_m2": 647.2971798971788,
+      "p75_area_m2": 1114.7336755396996,
+      "max_area_m2": 1683.914290167975,
+      "total_area_m2": 8926.838665488596
+    },
+    {
+      "dataset": "Barley 2 V2",
+      "class": "weed",
+      "regions": 40,
+      "min_pixels": 213.0,
+      "median_pixels": 6021.0,
+      "max_pixels": 399843.0,
+      "min_area_m2": 0.6389473677000285,
+      "p25_area_m2": 7.524880149650334,
+      "median_area_m2": 18.061512210900805,
+      "p75_area_m2": 29.69830364822632,
+      "max_area_m2": 1199.4301987947533,
+      "total_area_m2": 3069.854125520237
+    },
+    {
+      "dataset": "Barley 2 V2",
+      "class": "soil",
+      "regions": 13,
+      "min_pixels": 385.0,
+      "median_pixels": 61263.0,
+      "max_pixels": 148787.0,
+      "min_area_m2": 1.1549048665000514,
+      "p25_area_m2": 128.3774251084057,
+      "median_area_m2": 183.77386191270818,
+      "p75_area_m2": 239.02031107201063,
+      "max_area_m2": 446.32423473231984,
+      "total_area_m2": 2424.607276730208
+    },
+    {
+      "dataset": "Rapeseed V2",
+      "class": "crop",
+      "regions": 8,
+      "min_pixels": 65881.0,
+      "median_pixels": 170442.5,
+      "max_pixels": 449461.0,
+      "min_area_m2": 197.62672080488824,
+      "p25_area_m2": 342.19156249990465,
+      "median_area_m2": 511.28538365821953,
+      "p75_area_m2": 772.8698360440039,
+      "max_area_m2": 1348.2719381868196,
+      "total_area_m2": 4906.035872891708
+    },
+    {
+      "dataset": "Rapeseed V2",
+      "class": "weed",
+      "regions": 14,
+      "min_pixels": 985.0,
+      "median_pixels": 3569.5,
+      "max_pixels": 10534.0,
+      "min_area_m2": 2.954756606499824,
+      "p25_area_m2": 6.936178643024586,
+      "median_area_m2": 10.707617976549361,
+      "p75_area_m2": 19.874112900723816,
+      "max_area_m2": 31.599397048598117,
+      "total_area_m2": 190.9312723320886
+    },
+    {
+      "dataset": "Rapeseed V2",
+      "class": "soil",
+      "regions": 6,
+      "min_pixels": 42063.0,
+      "median_pixels": 49712.5,
+      "max_pixels": 64292.0,
+      "min_area_m2": 126.17860623269249,
+      "p25_area_m2": 131.27818616269218,
+      "median_area_m2": 149.12521604124112,
+      "p75_area_m2": 168.80809469458993,
+      "max_area_m2": 192.86011344678852,
+      "total_area_m2": 917.9873822108452
+    }
+  ],
+  "connectivity": "Eight-neighbour connectivity; diagonal contacts merge regions. Rasterization may join/split drawn polygons.",
+  "limits": [
+    "An observed minimum polygon/region is not a minimum resolvable plant size or an annotation inclusion rule.",
+    "The vector sizes cannot be extrapolated to all acquisition datasets without the other original vector annotations.",
+    "Connected regions can contain multiple plants or multiple touching annotation polygons; clipped rasters can truncate them.",
+    "Class proportions here are for whole masks, not deduplicated retained patch support; do not substitute for evaluation-support counts."
+  ],
+  "originals_modified": false
+}

@@ -1,0 +1,52 @@
+{
+  "models": [
+    {
+      "model": "UNet",
+      "runs": 3,
+      "selected_epochs": [
+        12,
+        19,
+        18
+      ],
+      "weed_f1_mean": 0.5573475157819571,
+      "weed_f1_sample_sd": 0.08927467762189215,
+      "weed_iou_mean": 0.38978113330439995,
+      "weed_iou_sample_sd": 0.08354318161737025,
+      "miou_mean": 0.41205549923214807,
+      "miou_sample_sd": 0.004378412892007944
+    },
+    {
+      "model": "DeepLabv3_random",
+      "runs": 3,
+      "selected_epochs": [
+        5,
+        16,
+        15
+      ],
+      "weed_f1_mean": 0.45358486491856537,
+      "weed_f1_sample_sd": 0.10821164558145711,
+      "weed_iou_mean": 0.2973845969093194,
+      "weed_iou_sample_sd": 0.08726208077536732,
+      "miou_mean": 0.3593190610363975,
+      "miou_sample_sd": 0.036764164158165503
+    },
+    {
+      "model": "DeepLabv3_imagenet",
+      "runs": 3,
+      "selected_epochs": [
+        1,
+        4,
+        12
+      ],
+      "weed_f1_mean": 0.41597325784490397,
+      "weed_f1_sample_sd": 0.24851017703038286,
+      "weed_iou_mean": 0.281895083240913,
+      "weed_iou_sample_sd": 0.18443850619777963,
+      "miou_mean": 0.3528589674071035,
+      "miou_sample_sd": 0.13209580080700947
+    }
+  ],
+  "support": "identical unique annotated Barley2 pixels for all 9 models",
+  "scope": "variation across three training seeds on a shared retrospective evaluation field; not independent-field replication",
+  "note": "No architecture-specific hyperparameter search; ImageNet backbone pretraining compared under declared multispectral input adaptation."
+}

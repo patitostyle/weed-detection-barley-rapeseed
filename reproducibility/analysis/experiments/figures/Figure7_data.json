@@ -1,0 +1,130 @@
+{
+  "dataset": "cebada_v2_C2_rgb_nir_re_indices",
+  "selection": "same two patch identities as the previous figure; no selection using revised predictions",
+  "checkpoint": "C:\\Users\\PATRICIO HERNANDEZ\\Downloads\\manuscrito\\publicacion_github\\repository\\reproducibility\\analysis\\experiments\\experiments_v1\\source_patch_valid_seed42\\best.pth",
+  "checkpoint_sha256": "9e316826cdcfbd520b63fb6b643ba7357950f5f32adc3b6c3e4e87da1a270464",
+  "checkpoint_seed": 42,
+  "checkpoint_selected_epoch": 12,
+  "checkpoint_selection_data": "spatially separated Barley 1 validation only",
+  "class_order": [
+    "crop",
+    "weed",
+    "soil"
+  ],
+  "preprocessing": "Data(norm='patch_valid') from the revised run_revision.py; no augmentation",
+  "probability_aggregation": "all retained overlapping Barley 2 patches before argmax",
+  "inference_batch_size": 4,
+  "inference_batch_membership": "same as complete retained-dataset evaluation",
+  "inference_patch_count": 32,
+  "neighbour_patch_count": 16,
+  "geographic_pixel_size_m": 0.05477000000000122,
+  "scale_bar_m": 5,
+  "device": "cuda",
+  "source_code_sha256": "8f478800f04cb33166c52b50fa1c119b9b72d0909eb6295176822cae2704bdb8",
+  "normalization_code_sha256": "2dca72d8b17e29ca43a7a643174ea687ebe798152feeff66145ab3d0b028e647",
+  "renderer_code_sha256": "4ee38b9ee184679dd18da056b1b6086005df9fd0c6d621551e705dd1ceaf7b7b",
+  "training_performed": false,
+  "unlabelled_predictions_validated": false,
+  "examples": [
+    {
+      "patch": "patch_00020.tif",
+      "image_sha256": "2c8ff400e945e8048efc50dd3433a9d044fcb64be06b69712be1d5ac12134fa0",
+      "mask_sha256": "1a4973f27380e791280c75d066d0105e177b9b3d3299780efb61a3f2487ebe98",
+      "contributing_retained_patches": [
+        "patch_00010.tif",
+        "patch_00011.tif",
+        "patch_00012.tif",
+        "patch_00019.tif",
+        "patch_00020.tif",
+        "patch_00021.tif",
+        "patch_00030.tif"
+      ],
+      "overlap_count_range": [
+        2,
+        4
+      ],
+      "reference_counts_crop_weed_soil": [
+        0,
+        13886,
+        0
+      ],
+      "confusion_at_labelled_pixels": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13886,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_counts_all_valid_input_pixels": [
+        10,
+        63830,
+        1696
+      ],
+      "unlabelled_pixels": 51650,
+      "invalid_input_pixels": 0,
+      "unique_evaluator_decisions_match": true,
+      "unique_evaluator_labels_match": true
+    },
+    {
+      "patch": "patch_00490.tif",
+      "image_sha256": "1e7bfb71e20fc2122260f36542ef37c392c5000b66927d8953af31cf05e24445",
+      "mask_sha256": "5573b26cc1884e526c7669eb180077671f196467bb4bc7c187c0a9c8bdb9b7c1",
+      "contributing_retained_patches": [
+        "patch_00481.tif",
+        "patch_00482.tif",
+        "patch_00483.tif",
+        "patch_00489.tif",
+        "patch_00490.tif",
+        "patch_00491.tif",
+        "patch_00497.tif",
+        "patch_00498.tif",
+        "patch_00499.tif"
+      ],
+      "overlap_count_range": [
+        4,
+        4
+      ],
+      "reference_counts_crop_weed_soil": [
+        1878,
+        20132,
+        0
+      ],
+      "confusion_at_labelled_pixels": [
+        [
+          1878,
+          0,
+          0
+        ],
+        [
+          15269,
+          4123,
+          740
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "predicted_counts_all_valid_input_pixels": [
+        59611,
+        5176,
+        749
+      ],
+      "unlabelled_pixels": 43526,
+      "invalid_input_pixels": 0,
+      "unique_evaluator_decisions_match": true,
+      "unique_evaluator_labels_match": true
+    }
+  ]
+}

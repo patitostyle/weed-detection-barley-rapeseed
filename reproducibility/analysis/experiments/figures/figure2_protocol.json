@@ -1,0 +1,55 @@
+{
+  "source_train_patches": 980,
+  "source_validation_patches": 215,
+  "source_seeds": [
+    42,
+    43,
+    44
+  ],
+  "source_checkpoint_selection": "Barley 1 validation only",
+  "barley_2_role": "retrospective evaluation, not checkpoint selection",
+  "primary_transfer_reference": "eight-channel U-Net, source seed42",
+  "target_test_groups": [
+    2,
+    4,
+    6,
+    7,
+    8
+  ],
+  "primary_budgets": [
+    21,
+    63,
+    "complete pool, 224--336 patches"
+  ],
+  "primary_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "partial_fine_tuning_budget": 63,
+  "partial_fine_tuning_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "normalization_budget": 63,
+  "normalization_seeds": [
+    42,
+    43,
+    44
+  ],
+  "normalization_source": "corresponding source model retrained under fixed bounds",
+  "unlabelled_pixels": "ignored",
+  "overlap_evaluation": "mean class probabilities, then one decision per geographic pixel",
+  "image_size_inches": [
+    7.8,
+    7.4
+  ],
+  "raster_dpi": 400,
+  "text_box_containment_check": "passed",
+  "original_manuscript_modified": false
+}

@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "reason": "author requested smaller bounded stages before target testing",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "batch_size": 8,
+  "epochs_max": 30,
+  "patience": 7,
+  "source_checkpoint": "source_patch_valid_seed42/best.pth; fixed seed, not best of source runs",
+  "stage1": {
+    "normalization": "patch_valid",
+    "budgets": [
+      63
+    ],
+    "strategies": [
+      "scratch",
+      "full"
+    ],
+    "runs": 50
+  },
+  "stage2": {
+    "normalization": "patch_valid",
+    "budgets": [
+      21,
+      "full"
+    ],
+    "strategies": [
+      "scratch",
+      "full"
+    ],
+    "runs": 100
+  },
+  "stage3": {
+    "normalization": "source_fixed",
+    "budgets": [
+      63
+    ],
+    "strategies": [
+      "scratch",
+      "full"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "runs": 30,
+    "additional_source_runs": 1
+  },
+  "stage4": {
+    "normalization": "patch_valid",
+    "budgets": [
+      63
+    ],
+    "strategies": [
+      "partial"
+    ],
+    "runs": 25
+  },
+  "policy": "training stages launched explicitly; no automatic extension or test-driven subset choice",
+  "test_policy": "63-patch stage evaluated only after all its 50 runs finish; learning-curve extension fixed before seeing test results",
+  "resume": "atomic last.pth each completed epoch: model/optimizer/scaler/RNG/loader state; interrupted epoch repeats",
+  "metrics": "unique geographic pixel per acquisition; no three-class mIoU for single-class test group"
+}

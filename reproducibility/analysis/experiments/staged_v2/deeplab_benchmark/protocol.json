@@ -1,0 +1,36 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "normalization": "patch_valid",
+  "source_split": "C:\\Users\\PATRICIO HERNANDEZ\\Downloads\\manuscrito\\revision_revisor1\\staged_v2\\partitions.json",
+  "models": [
+    "UNet",
+    "DeepLabv3_random",
+    "DeepLabv3_ImageNet_backbone"
+  ],
+  "new_training_runs": 7,
+  "reused_unet_seeds": [
+    42,
+    43
+  ],
+  "training": {
+    "epochs_max": 30,
+    "patience": 7,
+    "min_delta": 0.0001,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "optimizer": "Adam",
+    "loss": "unweighted cross entropy",
+    "augmentation": "paired flips and rotations by multiples of 90 degrees"
+  },
+  "selection": "unique-pixel weed F1 on spatially separated Barley1 validation, never Barley2",
+  "pretraining": "ResNet50 ImageNet1K V2 backbone only; random decoder",
+  "extra_channels": "RGB kernels copied; extra five kernels use mean RGB kernel; all kernels scaled by 3/8",
+  "input_scaling": "same patch-wise [0,1] inputs as U-Net; no claim that ImageNet fine-tuning was independently optimized",
+  "weights_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+  "test": "all available unique labelled Barley2-V2 geographic pixels, identical support for every model",
+  "scope": "retrospective model comparison under specified settings, not architecture-wide ranking"
+}
